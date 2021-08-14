@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cannabis Club House</title>
+        <!-- CSS Style -->
+        <link rel="stylesheet" href="estiloExterno.css" />
+        <!-- Fuentes extraídas de google fonts -->
+        <!-- Fuente Gowun -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Fuente Staatliches -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Fuente Marcellus-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap"
+            rel="stylesheet"
+        />
+        <!-- icono menú desplegable -->
+        <link
+            href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+            rel="stylesheet"
+        />
+        <!-- IonIcons -->
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+        ></script>
+        <!-- Animate Css -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+    </head>
+    <!-- Principal Content -->
+    <body class="body">
+        <header class="header">
+            <div>
+                <a href="index.html"
+                    ><img
+                        class="header__title--img"
+                        src="https://img.freepik.com/free-vector/leaf-marijuana-light-silhouette-dark-background-vintage-styled-illustration_148087-142.jpg?size=338&ext=jpg&ga=GA1.2.1719186521.1625184000"
+                        alt="logo"
+                /></a>
+            </div>
+            <!--start nav-->
+            <nav class="navigation">
+                <ul>
+                    <li>
+                        <a href="quienesSomos.html">Quienes Somos</a>
+                    </li>
+                    <li>
+                        <a href="informaciónLegal.html">Información legal</a>
+                    </li>
+                    <li>
+                        <a href="cursos.html"
+                            >Cursos <i class="icon ion-md-arrow-dropdown"></i
+                        ></a>
+                        <!--start menu desplegable-->
+                        <ul>
+                            <li>
+                                <a href="cursos.html#vegetacionExterior"
+                                    >Vegetación en exterior</a
+                                >
+                            </li>
+                            <li>
+                                <a href="cursos.html#vegetacionInterior"
+                                    >Vegetación en interior</a
+                                >
+                            </li>
+                            <li>
+                                <a href="cursos.html#aceitesMedicinales"
+                                    >Aceites medicinales</a
+                                >
+                            </li>
+                            <li>
+                                <a href="cursos.html#reikiManejoDeChakras"
+                                    >Reiki y Manejo de chakras</a
+                                >
+                            </li>
+                        </ul>
+                        <!--end menu desplegable-->
+                    </li>
+                    <li>
+                        <a href="membresia.html">Membresía & FAQs</a>
+                    </li>
+                    <li>
+                        <a href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                <!--end menu-->
+            </nav>
+            <!--end nav-->
+        </header>
+        <div class="content2">
+            <h1 class="logo2">Contact <span>Us</span></h1>
+            <div class="contact-wrapper">
+                <div class="contact-form">
+                    <h3>Contact us</h3>
+                    <form action="">
+                        <p>
+                            <label for="fullname">Nombre y apellido</label>
+                            <input type="text" name="fullname" id="fullname" />
+                        </p>
+                        <p>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" />
+                        </p>
+                        <p>
+                            <label for="telefono"
+                                >Telefono celular
+                                <input
+                                    type="tel"
+                                    name="phone"
+                                    id="phone"
+                                    pattern="[0-9] {3}-[0-9] {3}-[0-9]{4}"
+                                />
+                            </label>
+                        </p>
+                        <p>
+                            <label for="Affair">Asunto</label>
+                            <input type="text" name="affair" id="affair" />
+                        </p>
+                        <p class="block">
+                            <label>Mensaje</label>
+                            <textarea
+                                name="message"
+                                id="message"
+                                rows="3"
+                            ></textarea>
+                        </p>
+                        <p class="block">
+                            <button type="submit">Send</button>
+                        </p>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h4>More info</h4>
+                    <ul>
+                        <li>
+                            <ion-icon name="phone-portrait-outline"></ion-icon
+                            >(011)34455411
+                        </li>
+                        <li>
+                            <ion-icon name="logo-facebook"></ion-icon>Segui
+                            Verde Socios
+                        </li>
+                        <li>
+                            <ion-icon name="logo-twitter"></ion-icon>Segui Verde
+                            Club
+                        </li>
+                        <li>
+                            <ion-icon name="logo-instagram"></ion-icon>Somos
+                            segui Verde
+                        </li>
+                        <li>
+                            <ion-icon name="home-outline"></ion-icon>Capital
+                            Federal - La Paternal
+                        </li>
+                    </ul>
+                    <p>
+                        Nos podrás encontrar en estas direcciones para estar al
+                        tanto de todas las novedades del Club! Segui Verde para
+                        todos!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            Términos y condiciones - Producción Nacional - Argentina - 2021
+        </footer>
+    </body>
+</html>
