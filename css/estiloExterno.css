@@ -1,9 +1,3 @@
-/* Reset */
-* {
-    margin: 0rem;
-    padding: 0rem;
-}
-
 /* General */
 html {
     font-size: 62.5%;
@@ -11,7 +5,7 @@ html {
 
 /* Body */
 body {
-    background: #000;
+    background: #111 !important;
     font-family: "Gowun Dodum", sans-serif;
     min-height: 100vh;
     overflow-x: hidden;
@@ -225,8 +219,6 @@ body {
     width: 60%;
     margin: 0 auto;
     padding: 20px;
-
-
 
     border-radius: 30px;
 }
