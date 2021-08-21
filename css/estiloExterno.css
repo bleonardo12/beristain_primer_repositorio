@@ -11,7 +11,7 @@ html {
 
 /* Body */
 body {
-    background: #000;
+    background: #000 !important;
     font-family: "Gowun Dodum", sans-serif;
     min-height: 100vh;
     overflow-x: hidden;
@@ -160,18 +160,6 @@ body {
     margin: 0 auto;
     padding: 20px;
 
-    /* Creas el borde */
-    border: 5px solid transparent;
-
-    /* agregas el gradiente a las esquinas */
-    border-image: linear-gradient(
-            to top,
-            #dbf300 0%,
-            #ff8a54 50%,
-            rgb(155, 190, 0) 100%
-        )
-        1;
-
     border-radius: 30px;
 }
 
@@ -195,18 +183,6 @@ body {
 
 /* Title section decoration parrafo */
 
-.section__title--decoration {
-    text-align: justify;
-    display: flex;
-    flex-direction: column;
-    line-height: 3rem;
-    font-weight: bold;
-    color: #fff;
-    font-size: 2rem;
-    border: hsl(130, 100%, 68%) solid 4px;
-    padding: 3rem;
-}
-
 /* General */
 
 .caracteristicas {
@@ -225,8 +201,6 @@ body {
     width: 60%;
     margin: 0 auto;
     padding: 20px;
-
-
 
     border-radius: 30px;
 }
@@ -445,7 +419,6 @@ body {
 /* parrafos */
 .section {
     font-size: 1em;
-    border-bottom: 1px solid #58ff4d;
 }
 .section__title--decoration2 {
     text-align: center;
