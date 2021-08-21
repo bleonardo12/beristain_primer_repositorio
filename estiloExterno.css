@@ -226,17 +226,7 @@ body {
     margin: 0 auto;
     padding: 20px;
 
-    /* Creas el borde */
-    border: 5px solid transparent;
 
-    /* agregas el gradiente a las esquinas */
-    border-image: linear-gradient(
-            to top,
-            #f300e7 0%,
-            #ff7f44 50%,
-            rgb(255, 18, 18) 100%
-        )
-        1;
 
     border-radius: 30px;
 }
