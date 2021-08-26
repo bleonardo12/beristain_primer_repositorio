@@ -1,0 +1,60 @@
+/* Página informacionLegaL */
+.content1 {
+    grid-column: 1/6;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    padding-bottom: 0rem;
+}
+.content1__title {
+    color: #fff;
+    text-align: center;
+    font-size: 3rem;
+    font-family: "Staatliches", cursive;
+    font-weight: 400;
+    padding-top: 2rem;
+}
+
+.sectionInformacionLegal {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.decorationText {
+    font-size: 2rem;
+}
+
+.decorationText__title1 {
+    color: #fff;
+    font-size: 2rem;
+    padding: 4rem;
+    border-bottom: #58ff4d solid 2px;
+    width: 60%;
+}
+
+.decorationText__title--parrafo {
+    color: #fff;
+}
+.span {
+    font-style: italic;
+    font-weight: 800;
+}
+
+.text1 {
+    font-size: 2rem;
+    padding: 1rem;
+    color: #fff;
+    font-weight: 700;
+}
+
+.section__title--decoration1 {
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    line-height: 3rem;
+    font-weight: 300;
+    color: #fff;
+    font-size: 2rem;
+    padding: 3rem;
+}

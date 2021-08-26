@@ -1,0 +1,118 @@
+/* Página interna quienesSomos */
+
+/* Grid */
+.container {
+    background-color: #000;
+    display: grid;
+    gap: 1.6em;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 2rem 2rem;
+}
+
+.container .header,
+.container .footer {
+    grid-column: 1/6;
+}
+
+.container > .content {
+    grid-column: span 3;
+}
+
+.container > .sidebar {
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container .sidebar img {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.content > .article {
+    padding: 20px;
+    margin-top: 5px;
+    color: #fff;
+}
+
+.content > .article h4,
+.content > .article p {
+    padding: 10px;
+    font-size: 15px;
+}
+
+/* Párrafos */
+.article {
+    text-align: justify;
+}
+
+/* Map section Quienes Somos */
+.ubicacion {
+    position: relative;
+    left: 45rem;
+}
+
+.border_title2 {
+    /* Creas el borde */
+    border: 5px solid transparent;
+
+    /* agregas el gradiente a las esquinas */
+    border-image: linear-gradient(
+            to top,
+            #08f300 0%,
+            #ffd344 50%,
+            rgb(18, 255, 117) 100%
+        )
+        1;
+
+    border-radius: 30px;
+}
+
+/* Página Cursos */
+
+/* Form */
+
+/* parrafos */
+.section {
+    font-size: 1em;
+}
+.section__title--decoration2 {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.title3 {
+    margin: 0 2rem;
+    padding: 0 2rem;
+}
+
+/* formulario radio bottom */
+.formulario {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+    color: #fff;
+    font-size: 2rem;
+    left: 50rem;
+    /* Creas el borde */
+    border: 5px solid transparent;
+
+    /* agregas el gradiente a las esquinas */
+    border-image: linear-gradient(
+            to top,
+            #08f300 0%,
+            #ffd344 50%,
+            rgb(18, 255, 117) 100%
+        )
+        1;
+
+    border-radius: 30px;
+}

@@ -1,14 +1,26 @@
-// Variables generales
+// reset
 
-$base-font-size: 16px;
-$background-color: #111;
-$font-family: "Gowun Dodum", sans-serif;
-$min-height: 100vh;
-$overflow-x: hidden;
-$margin-top: 2rem;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+@import "pages/variables";
+@import "pages/index.scss";
+@import "componentes/header.scss";
+@import "pages/quienesSomos.scss";
+@import "pages/legal.scss";
+@import "pages/cursos.scss";
+@import "pages/membresia";
+@import "pages/contacto";
 
 body {
     font-size: $base-font-size;
-    background-color: $background-color;
+    background-color: $background-color !important;
     min-height: $min-height;
 }
