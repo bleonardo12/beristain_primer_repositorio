@@ -1,3 +1,14 @@
-.body {
-    background-color: #111;
+// Variables generales
+
+$base-font-size: 16px;
+$background-color: #111;
+$font-family: "Gowun Dodum", sans-serif;
+$min-height: 100vh;
+$overflow-x: hidden;
+$margin-top: 2rem;
+
+body {
+    font-size: $base-font-size;
+    background-color: $background-color;
+    min-height: $min-height;
 }
