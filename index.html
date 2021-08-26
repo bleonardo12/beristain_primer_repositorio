@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Cannabis Club House</title>
         <!-- CSS Style -->
-        <link rel="stylesheet" href="css/estiloExterno.css" />
+        <link rel="stylesheet" href="css/styles.css" />
         <!-- Fuentes extraídas de google fonts -->
         <!-- Fuente Gowun -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -45,113 +45,85 @@
     <!-- Principal Content -->
     <body class="vh-100">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-xxs-4">
-                    <header class="header">
-                        <div class="m-4 aling-items-center img-circle">
-                            <a href="index.html"
-                                ><img
-                                    class="header__title--img"
-                                    src="https://img.freepik.com/free-vector/leaf-marijuana-light-silhouette-dark-background-vintage-styled-illustration_148087-142.jpg?size=338&ext=jpg&ga=GA1.2.1719186521.1625184000"
-                                    alt="logo"
-                            /></a>
-                        </div>
-                        <div class="container-fluid">
-                            <div class="row">
-                                <!--start nav-->
-                                <nav class="cointainer-fluid navigation">
-                                    <ul>
-                                        <div class="m-3 p-3">
-                                            <li>
-                                                <a href="quienesSomos.html"
-                                                    >Quienes Somos</a
-                                                >
-                                            </li>
-                                        </div>
-                                        <div class="m-3 p-3">
-                                            <li>
-                                                <a href="legal.html"
-                                                    >Información legal</a
-                                                >
-                                            </li>
-                                        </div>
-                                        <div class="m-3 p-3">
-                                            <li>
-                                                <a href="cursos.html"
-                                                    >Cursos
-                                                    <i
-                                                        class="
-                                                            icon
-                                                            ion-md-arrow-dropdown
-                                                        "
-                                                    ></i
-                                                ></a>
-                                                <!--start menu desplegable-->
-                                                <ul>
-                                                    <li>
-                                                        <a
-                                                            href="cursos.html#vegetacionExterior"
-                                                            >Vegetación en
-                                                            exterior</a
-                                                        >
-                                                    </li>
-                                                    <li>
-                                                        <a
-                                                            href="cursos.html#vegetacionInterior"
-                                                            >Vegetación en
-                                                            interior</a
-                                                        >
-                                                    </li>
-                                                    <li>
-                                                        <a
-                                                            href="cursos.html#aceitesMedicinales"
-                                                            >Aceites
-                                                            medicinales</a
-                                                        >
-                                                    </li>
-                                                    <div>
-                                                        <li>
-                                                            <a
-                                                                href="cursos.html#reikiManejoDeChakras"
-                                                                >Reiki y Manejo
-                                                                de chakras</a
-                                                            >
-                                                        </li>
-                                                    </div>
-                                                </ul>
-                                                <!--end menu desplegable-->
-                                            </li>
-                                        </div>
-                                        <div class="m-3 p-3">
-                                            <li>
-                                                <a href="membresia.html"
-                                                    >Membresía & FAQs</a
-                                                >
-                                            </li>
-                                        </div>
-                                        <div class="m-3 p-3">
-                                            <li>
-                                                <a href="contacto.html"
-                                                    >Contacto</a
-                                                >
-                                            </li>
-                                        </div>
-                                    </ul>
-                                    <!--end menu-->
-                                </nav>
-                            </div>
-                        </div>
-                        <!--end nav-->
-                    </header>
+            <header class="header">
+                <div>
+                    <a href="index.html"
+                        ><img
+                            class="header__title--img"
+                            src="https://img.freepik.com/free-vector/leaf-marijuana-light-silhouette-dark-background-vintage-styled-illustration_148087-142.jpg?size=338&ext=jpg&ga=GA1.2.1719186521.1625184000"
+                            alt="logo"
+                    /></a>
                 </div>
-            </div>
+                <!--start nav-->
+                <nav class="navigation navbar navbar-expand-lg navbar-light bg-dark">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-light" aria-current="page" href="quienesSomos.html">Quienes Somos</a>
+                        </li>
+                        <li  class="nav-item">
+                            <a class="nav-link text-light" href="legal.html"
+                                >Información legal</a
+                            >
+                        </li>
+                        <li  class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" href="cursos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                                >Cursos
+                            </a>
+                            <!--start menu desplegable-->
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown"  >
+                                <li>
+                                    <a class="dropdown-item fs-2" href="cursos.html#vegetacionExterior"
+                                        >Vegetación en exterior</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="dropdown-item fs-2" href="cursos.html#vegetacionInterior"
+                                        >Vegetación en interior</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="dropdown-item fs-2" href="cursos.html#aceitesMedicinales"
+                                        >Aceites medicinales</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="dropdown-item fs-2" href="cursos.html#reikiManejoDeChakras"
+                                        >Reiki y Manejo de chakras</a
+                                    >
+                                </li>
+                            </ul>
+                            <!--end menu desplegable-->
+                        </li>
+                        <li  class="nav-item">
+                            <a class="nav-link text-light" href="membresia.html">Membresía & Faqs</a>
+                        </li>
+                        <li  class="nav-item">
+                            <a class="nav-link text-light" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                    <!--end menu-->
+                    </div>
+                    </div>
+                </nav>
+                <!--end nav-->
+            </header>
             <!-- Contenido principal -->
             <main class="main">
                 <!-- background image con texto -->
                 <div class="">
                     <div class="contenedor m-5">
                         <img
-                            class="contenedor__img"
+                            class="contenedor__img "
                             src="https://www.cannabeta.eu/wp-content/uploads/2020/07/green-bushes-of-marijuana-close-up-view-of-a-marij-T8GYQHC.jpg"
                             alt="imagen central"
                         />
@@ -541,7 +513,7 @@
                                                 <label class="text-light mb-2"
                                                     >Mensaje</label
                                                 >
-                                                <textarea
+                                                <textarea class="form-control form-group"
                                                     name="message"
                                                     id="message"
                                                     rows="3"
