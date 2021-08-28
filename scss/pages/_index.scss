@@ -1,21 +1,10 @@
 /* Estructura general */
-
-.main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    width: 80%;
-    margin: 0 auto;
+body {
+    background-color: $background-color;
 }
 
-/* section Nosotros */
-
-/* section */
-.contenedor__img {
-    padding-left: 0rem;
-    width: 1380px;
+.carousel-inner {
+    max-height: 100rem;
 }
 
 .section {
@@ -26,7 +15,6 @@
     font-weight: lighter;
     padding: 2rem;
     margin: 2rem;
-    color: #fff;
     background-color: transparent;
     width: 80%;
 }
@@ -70,7 +58,6 @@
 /* Title Section H2 */
 
 .section__title {
-    color: #fff;
     padding: 5rem;
     margin: 2rem;
     font-size: 5rem;
@@ -83,12 +70,12 @@
 
 .caracteristicas {
     list-style-type: circle;
-    color: #fff;
-    font-size: 1.7rem;
+    color: #011;
+    font-size: 1rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
     font-weight: 500;
     padding: 3rem;
     margin: 5rem;
@@ -103,8 +90,11 @@
 
 .caracteristicas__list {
     padding-bottom: 2rem;
-    padding-left: 10rem;
+    padding-left: rem;
     width: 80%;
+    display: flex;
+    justify-items: left;
+    align-items: left;
 }
 
 .plants {
@@ -165,12 +155,14 @@
     display: flex;
     width: 1280px;
 }
-/* footer */
 
-.footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    color: #fff;
+// MEDIA QUERIES
+@media (max-width: 768px) {
+    #intro {
+        width: 90% !important;
+    }
+    .seccion {
+        width: 100% !important;
+        text-align: center;
+    }
 }

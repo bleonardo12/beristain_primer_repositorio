@@ -43,144 +43,108 @@
         />
     </head>
     <body>
+        <!--start nav-->
         <div class="container">
-            <header class="header">
-                <div>
-                    <a href="index.html"
-                        ><img
-                            class="header__title--img"
-                            src="https://img.freepik.com/free-vector/leaf-marijuana-light-silhouette-dark-background-vintage-styled-illustration_148087-142.jpg?size=338&ext=jpg&ga=GA1.2.1719186521.1625184000"
-                            alt="logo"
-                    /></a>
-                </div>
-                <!--start nav-->
+            <div class="row">
                 <nav
                     class="
-                        navigation
-                        navbar navbar-expand-lg navbar-light
+                        navbar
+                        fixed-top
+                        navbar-expand-lg navbar-light
                         bg-dark
                     "
                 >
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="#"></a>
-                        <button
-                            class="navbar-toggler"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent"
-                            aria-controls="navbarSupportedContent"
-                            aria-expanded="false"
-                            aria-label="Toggle navigation"
-                        >
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div
-                            class="collapse navbar-collapse"
-                            id="navbarSupportedContent"
-                        >
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a
-                                        class="nav-link active text-light"
-                                        aria-current="page"
-                                        href="quienesSomos.html"
-                                        >Quienes Somos</a
-                                    >
-                                </li>
-                                <li class="nav-item">
-                                    <a
-                                        class="nav-link text-light"
-                                        href="legal.html"
-                                        >Información legal</a
-                                    >
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a
-                                        class="
-                                            nav-link
-                                            dropdown-toggle
-                                            text-light
-                                        "
-                                        href="cursos.html"
-                                        id="navbarDropdown"
-                                        role="button"
-                                        data-bs-toggle="dropdown"
-                                        aria-expanded="false"
-                                        >Cursos
-                                    </a>
-                                    <!--start menu desplegable-->
-                                    <ul
-                                        class="dropdown-menu"
-                                        aria-labelledby="navbarDropdown"
-                                    >
-                                        <li>
-                                            <a
-                                                class="dropdown-item fs-2"
-                                                href="cursos.html#vegetacionExterior"
-                                                >Vegetación en exterior</a
-                                            >
-                                        </li>
-                                        <li>
-                                            <a
-                                                class="dropdown-item fs-2"
-                                                href="cursos.html#vegetacionInterior"
-                                                >Vegetación en interior</a
-                                            >
-                                        </li>
-                                        <li>
-                                            <a
-                                                class="dropdown-item fs-2"
-                                                href="cursos.html#aceitesMedicinales"
-                                                >Aceites medicinales</a
-                                            >
-                                        </li>
-                                        <li>
-                                            <a
-                                                class="dropdown-item fs-2"
-                                                href="cursos.html#reikiManejoDeChakras"
-                                                >Reiki y Manejo de chakras</a
-                                            >
-                                        </li>
-                                    </ul>
-                                    <!--end menu desplegable-->
-                                </li>
-                                <li class="nav-item">
-                                    <a
-                                        class="nav-link text-light"
-                                        href="membresia.html"
-                                        >Membresía & Faqs</a
-                                    >
-                                </li>
-                                <li class="nav-item">
-                                    <a
-                                        class="nav-link text-light"
-                                        href="contacto.html"
-                                        >Contacto</a
-                                    >
-                                </li>
-                            </ul>
-                            <form class="d-flex">
-                                <input
-                                    class="form-control me-2"
-                                    type="search"
-                                    placeholder="Search"
-                                    aria-label="Search"
-                                />
-                                <button
-                                    class="btn btn-outline-success"
-                                    type="submit"
+                    <a href="index.html"
+                        ><img
+                            src="https://img.freepik.com/free-vector/leaf-marijuana-light-silhouette-dark-background-vintage-styled-illustration_148087-142.jpg?size=338&ext=jpg&ga=GA1.2.1719186521.1625184000"
+                            class="header__title--img navbar-brand"
+                            alt="logo"
+                        />
+                    </a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="quienesSomos.html" class="nav-link"
+                                    >Quienes somos</a
                                 >
-                                    Search
-                                </button>
-                            </form>
-                            <!--end menu-->
-                        </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="legal.html" class="nav-link"
+                                    >Información legal</a
+                                >
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a
+                                    href="#"
+                                    class="nav-link dropdown-toggle"
+                                    id="navbarDropdown"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                    >Cursos</a
+                                >
+                                <ul
+                                    class="dropdown-menu"
+                                    aria-labelledby="navbarDropdown"
+                                >
+                                    <li>
+                                        <a href="#" class="dropdown-item">
+                                            Vegetación en exterior</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-item"
+                                            >Vegetación en interior</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-item"
+                                            >Aceites medicinales</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-item"
+                                            >Espiritual- Reiki y chakras</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-bar active">
+                                <a href="membresia.html" class="nav-link">
+                                    Membresía & FAQS</a
+                                >
+                            </li>
+                            <li class="nav-bar active">
+                                <a href="contacto.html" class="nav-link"
+                                    >Contacto</a
+                                >
+                            </li>
+                        </ul>
                     </div>
+                    <form action="#" class="d-flex">
+                        <input type="text" class="form-control me-2" />
+                        <button type="submit" class="btn btn-outline-success">
+                            Buscar
+                        </button>
+                    </form>
                 </nav>
-                <!--end nav-->
-            </header>
-            <main class="content">
-                <article class="article">
+            </div>
+        </div>
+        <!--end nav-->
+        <div class="container">
+            <div class="row w-50 m-auto text-center">
+                <section class="col">
                     <h4 class="border_title2">El Club</h4>
                     <p>
                         Nacemos como un grupo de amigos que profesa la libertad
@@ -201,8 +165,6 @@
                         quieran participar de esta comunidad a ser parte de
                         ella, atesorandose sus beneficios a través del club.
                     </p>
-                </article>
-                <article class="article">
                     <h4 class="border_title2">Elaboración y mantenimiento</h4>
                     <p>
                         La producción de cannabis, tanto en exterior como en
@@ -215,8 +177,6 @@
                         primordial entender y transmitir que el cannabis es un
                         eje más de la naturaleza.
                     </p>
-                </article>
-                <article class="article">
                     <h4 class="border_title2">Sostenimiento productivo</h4>
                     <p>
                         Seguí Verde como institución entiende que todo el
@@ -230,18 +190,16 @@
                         para un grato resultado: eso entendemos por
                         sostenimiento productivo.
                     </p>
-                </article>
-            </main>
-            <!-- Redes sociales -->
-            <aside class="sidebar">
+                </section>
+                <!-- Tipo de plantas -->
+            <aside class="col-lg-4 sidebar">
                 <div>
                     <img
                         src="https://comohacerpara.com/imgn/18983-cannabis-cbd.jpg"
                         alt="planta1"
                     />
                     <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Quidem, vitae.
+                        Indica 
                     </p>
                 </div>
                 <div>
@@ -250,20 +208,16 @@
                         alt="flora1"
                     />
                     <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Quidem, vitae.
+                        Sativa
                     </p>
-                </div>
-                <div>
+
                     <img
                         src="https://www.parlamentario.com/wp-content/uploads/2020/03/Cannabis-medicinal-300x200.jpg"
                         alt="medicinal1"
                     />
                     <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Quidem, vitae.
+                        Híbrida
                     </p>
-                </div>
             </aside>
             <div class="ubicacion">
                 <div class="mapa">
@@ -277,10 +231,13 @@
                     ></iframe>
                 </div>
             </div>
-            <footer class="footer">
-                Términos y condiciones - Producción Nacional - Argentina - 2021
-            </footer>
+            </div>
         </div>
+
+
+        <footer class="footer">
+            Términos y condiciones - Producción Nacional - Argentina - 2021
+        </footer>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"

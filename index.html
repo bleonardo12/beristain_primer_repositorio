@@ -43,228 +43,223 @@
         />
     </head>
     <!-- Principal Content -->
-    <body class="vh-100">
-        <div class="container-fluid">
-            <header class="header">
-                <div>
-                    <a href="index.html"
-                        ><img
-                            class="header__title--img"
-                            src="https://img.freepik.com/free-vector/leaf-marijuana-light-silhouette-dark-background-vintage-styled-illustration_148087-142.jpg?size=338&ext=jpg&ga=GA1.2.1719186521.1625184000"
-                            alt="logo"
-                    /></a>
-                </div>
-                <!--start nav-->
+    <body>
+        <!--start nav-->
+        <div class="container">
+            <div class="row">
                 <nav
                     class="
-                        navigation
-                        navbar navbar-expand-lg navbar-light
+                        navbar
+                        fixed-top
+                        navbar-expand-lg navbar-light
                         bg-dark
                     "
                 >
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="#"></a>
-                        <button
-                            class="navbar-toggler"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent"
-                            aria-controls="navbarSupportedContent"
-                            aria-expanded="false"
-                            aria-label="Toggle navigation"
-                        >
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div
-                            class="collapse navbar-collapse"
-                            id="navbarSupportedContent"
-                        >
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a
-                                        class="nav-link active text-light"
-                                        aria-current="page"
-                                        href="quienesSomos.html"
-                                        >Quienes Somos</a
-                                    >
-                                </li>
-                                <li class="nav-item">
-                                    <a
-                                        class="nav-link text-light"
-                                        href="legal.html"
-                                        >Información legal</a
-                                    >
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a
-                                        class="
-                                            nav-link
-                                            dropdown-toggle
-                                            text-light
-                                        "
-                                        href="cursos.html"
-                                        id="navbarDropdown"
-                                        role="button"
-                                        data-bs-toggle="dropdown"
-                                        aria-expanded="false"
-                                        >Cursos
-                                    </a>
-                                    <!--start menu desplegable-->
-                                    <ul
-                                        class="dropdown-menu"
-                                        aria-labelledby="navbarDropdown"
-                                    >
-                                        <li>
-                                            <a
-                                                class="dropdown-item fs-2"
-                                                href="cursos.html#vegetacionExterior"
-                                                >Vegetación en exterior</a
-                                            >
-                                        </li>
-                                        <li>
-                                            <a
-                                                class="dropdown-item fs-2"
-                                                href="cursos.html#vegetacionInterior"
-                                                >Vegetación en interior</a
-                                            >
-                                        </li>
-                                        <li>
-                                            <a
-                                                class="dropdown-item fs-2"
-                                                href="cursos.html#aceitesMedicinales"
-                                                >Aceites medicinales</a
-                                            >
-                                        </li>
-                                        <li>
-                                            <a
-                                                class="dropdown-item fs-2"
-                                                href="cursos.html#reikiManejoDeChakras"
-                                                >Reiki y Manejo de chakras</a
-                                            >
-                                        </li>
-                                    </ul>
-                                    <!--end menu desplegable-->
-                                </li>
-                                <li class="nav-item">
-                                    <a
-                                        class="nav-link text-light"
-                                        href="membresia.html"
-                                        >Membresía & Faqs</a
-                                    >
-                                </li>
-                                <li class="nav-item">
-                                    <a
-                                        class="nav-link text-light"
-                                        href="contacto.html"
-                                        >Contacto</a
-                                    >
-                                </li>
-                            </ul>
-                            <form class="d-flex">
-                                <input
-                                    class="form-control me-2"
-                                    type="search"
-                                    placeholder="Search"
-                                    aria-label="Search"
-                                />
-                                <button
-                                    class="btn btn-outline-success"
-                                    type="submit"
+                    <a class="navbar-brand" href="index.html"
+                        ><img
+                            src="https://img.freepik.com/free-vector/leaf-marijuana-light-silhouette-dark-background-vintage-styled-illustration_148087-142.jpg?size=338&ext=jpg&ga=GA1.2.1719186521.1625184000"
+                            class="header__title--img"
+                            alt="logo"
+                    /></a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="quienesSomos.html" class="nav-link"
+                                    >Quienes somos</a
                                 >
-                                    Search
-                                </button>
-                            </form>
-                            <!--end menu-->
-                        </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="legal.html" class="nav-link"
+                                    >Información legal</a
+                                >
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a
+                                    href="#"
+                                    class="nav-link dropdown-toggle"
+                                    id="navbarDropdown"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                    >Cursos</a
+                                >
+                                <ul
+                                    class="dropdown-menu"
+                                    aria-labelledby="navbarDropdown"
+                                >
+                                    <li>
+                                        <a href="#" class="dropdown-item">
+                                            Vegetación en exterior</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-item"
+                                            >Vegetación en interior</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-item"
+                                            >Aceites medicinales</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-item"
+                                            >Espiritual- Reiki y chakras</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-bar active">
+                                <a href="membresia.html" class="nav-link">
+                                    Membresía & FAQS</a
+                                >
+                            </li>
+                            <li class="nav-bar active">
+                                <a href="contacto.html" class="nav-link"
+                                    >Contacto</a
+                                >
+                            </li>
+                        </ul>
                     </div>
+                    <form action="#" class="d-flex">
+                        <input type="text" class="form-control me-2" />
+                        <button type="submit" class="btn btn-outline-success">
+                            Buscar
+                        </button>
+                    </form>
                 </nav>
-                <!--end nav-->
-            </header>
-            <!-- Contenido principal -->
-            <main class="main">
-                <!-- background image con texto -->
-                <div class="">
-                    <div class="contenedor m-5">
+            </div>
+        </div>
+        <!--end nav-->
+        <!-- Contenido principal -->
+        <main class="contenedor">
+            <div
+                id="carouselExampleControls"
+                class="carousel slide"
+                data-bs-ride="carousel"
+            >
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="4000">
                         <img
-                            class="contenedor__img"
                             src="https://www.cannabeta.eu/wp-content/uploads/2020/07/green-bushes-of-marijuana-close-up-view-of-a-marij-T8GYQHC.jpg"
-                            alt="imagen central"
+                            class="d-block w-100 imgCarousel"
+                            alt="principalImage"
                         />
-                        <!-- club name -->
-                        <div class="textoEncima">
-                            SEGUI VERDE CANNABIS CLUB <br />
-                            Asociación Civil
-                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img
+                            src="https://www.alchimiaweb.com/blog/wp-content/uploads/2017/04/Estructura-planta-indica-MASTERKUSH.jpg"
+                            class="d-block w-100 imgCarousel"
+                            alt="principalImage2"
+                        />
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img
+                            src="https://sensiseeds.com/blog/wp-content/uploads/2019/12/growing-cannabis-1024x1024.jpg"
+                            class="d-block w-100 imgCarousel"
+                            alt="principalImage3"
+                        />
                     </div>
                 </div>
-                <!-- Descripción del Club -->
-
-                <div class="container-fluid">
-                    <div class="border d-flex justify-content-between row my-5">
-                        <section class="section">
-                            <div>
-                                <h2 class="section__title">Nosotros</h2>
-                            </div>
-                            <div class="d-flex column">
-                                <p class="m-5 d-flex column">
-                                    Somos un grupo de usuarias/os y cultivadores
-                                    solidarios de Cannabis sativa que decidimos
-                                    unirnos con el objetivo de conseguir un
-                                    marco legal para el cultivo a fin de
-                                    satisfacer tanto las necesidades propias
-                                    como las de terceros, en búsqueda de una
-                                    mejor calidad de vida, como venimos haciendo
-                                    desde hace años.​<br />
-                                    <br />
-                                    Desde nuestra ONG adoptamos los principios
-                                    de la agroecología, es decir cultivar sin
-                                    utilizar inocuo. Este cultivo tampoco
-                                    produce restos de fertilizantes ni
-                                    agroquímicos, para garantizar un producto
-                                    contaminantes, lo que garantiza la
-                                    preservación de la salud humana, animal y
-                                    del medio ambiente. <br />
-                                    <br />
-                                    Trabajamos con una mirada en las necesidades
-                                    sociales, económicas y en pos de una mejora
-                                    en la salud pública. Uno de nuestros
-                                    objetivos es la investigación científica y
-                                    el desarrollo de los posibles usos de esta
-                                    especie vegetal, así como la difusión de
-                                    información de calidad y el asesoramiento a
-                                    nuestros socios y a la comunidad en general,
-                                    para una mejor toma de decisiones a la hora
-                                    de resolver las necesidades de una terapia
-                                    con cannabis.
-                                    <br />
-                                    Creemos que el autocultivo es una forma de
-                                    acceso democrático al cannabis, pero también
-                                    sabemos que es solo una solución parcial, ya
-                                    que muchos carecen de las condiciones
-                                    necesarias para llevar a cabo esta tarea.
-                                    Por eso reconocemos la necesidad de
-                                    conseguir espacios que permitan establecer
-                                    cultivos legales para poder satisfacer dicha
-                                    demanda. Consideramos que la dicotomía entre
-                                    uso recreativo y terapéutico es falsa: Todo
-                                    uso de cannabis es terapéutico.
-                                </p>
-                            </div>
-                        </section>
-                        <!-- Fin descripción del Club -->
-                    </div>
-                </div>
-                <!-- Variedades existentes -->
-                <section>
-                    <div class="border_title">
-                        <h3 class="title gradient">Variedades</h3>
-                    </div>
-
-                    <article class="plants">
-                        <!-- variedad uno -->
-                        <div class="border_title1">
+                <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev"
+                >
+                    <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next"
+                >
+                    <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <!-- club name -->
+            <div class="textoEncima">
+                SEGUI VERDE CANNABIS CLUB <br />
+                Asociación Civil
+            </div>
+            <!-- Descripción del Club -->
+            <section
+                class="w-50 mx-auto text-center justify-content-center"
+                id="intro"
+            >
+                <h2 class="p-3 fs-2 border-top border-5">Nosotros</h2>
+                <p class="p-3 fs-4">
+                    Somos un grupo de usuarias/os y cultivadores solidarios de
+                    Cannabis sativa que decidimos unirnos con el objetivo de
+                    conseguir un marco legal para el cultivo a fin de satisfacer
+                    tanto las necesidades propias como las de terceros, en
+                    búsqueda de una mejor calidad de vida, como venimos haciendo
+                    desde hace años.​<br />
+                    <br />
+                    Desde nuestra ONG adoptamos los principios de la
+                    agroecología, es decir cultivar sin utilizar inocuo. Este
+                    cultivo tampoco produce restos de fertilizantes ni
+                    agroquímicos, para garantizar un producto contaminantes, lo
+                    que garantiza la preservación de la salud humana, animal y
+                    del medio ambiente. <br />
+                    <br />
+                    Trabajamos con una mirada en las necesidades sociales,
+                    económicas y en pos de una mejora en la salud pública. Uno
+                    de nuestros objetivos es la investigación científica y el
+                    desarrollo de los posibles usos de esta especie vegetal, así
+                    como la difusión de información de calidad y el
+                    asesoramiento a nuestros socios y a la comunidad en general,
+                    para una mejor toma de decisiones a la hora de resolver las
+                    necesidades de una terapia con cannabis.
+                    <br />
+                    Creemos que el autocultivo es una forma de acceso
+                    democrático al cannabis, pero también sabemos que es solo
+                    una solución parcial, ya que muchos carecen de las
+                    condiciones necesarias para llevar a cabo esta tarea. Por
+                    eso reconocemos la necesidad de conseguir espacios que
+                    permitan establecer cultivos legales para poder satisfacer
+                    dicha demanda. Consideramos que la dicotomía entre uso
+                    recreativo y terapéutico es falsa: Todo uso de cannabis es
+                    terapéutico.
+                </p>
+            </section>
+            <!-- Fin descripción del Club -->
+            <!-- Variedades existentes -->
+            <section class="container-fluid">
+                <div class="row w-75 mx-auto my-5 seccion">
+                    <div
+                        class="
+                            col-sm-12 col-md-12 col-lg-4
+                            xl-4
+                            d-flex
+                            justify-content-start
+                            my-5
+                        "
+                    >
+                        <div>
+                            <h3>Variedades</h3>
                             <h4 class="plants__general">Indica</h4>
-                            <p class="plants__general--decoration">
+                            <p>
                                 El Cannabis Índica fue denominado por
                                 Jean-Baptiste Lamarck, un naturalista francés de
                                 enorme influencia. Él propuso realizar la
@@ -280,13 +275,77 @@
                                 perfecta de Cannabis.
                             </p>
                         </div>
-                        <br />
-                        <br />
-                        <!-- Caracteristicas variedad uno -->
-
-                        <div class="container_caracteristicas">
-                            <h5 class="title1">Características</h5>
-                            <ul class="caracteristicas">
+                    </div>
+                    <div
+                        class="
+                            col-sm-12 col-md-12 col-lg-4
+                            xl-4
+                            d-flex
+                            justify-content-start
+                            my-5
+                        "
+                    >
+                        <div>
+                            <h3>Variedades</h3>
+                            <h4 class="plants__general">Sativa</h4>
+                            <p>
+                                Son plantas con un mayor periodo de crecimiento,
+                                incluso durante la floración, muy altas. Las
+                                hojas tienen foliolos más angostos que los de
+                                las índicas y un verde menos intenso. En las
+                                zonas cercanas al ecuador, de las que son
+                                originarias, hay mucha luz y poca variación de
+                                horas de exposición entre el invierno y el
+                                verano, por lo que la planta tiene la
+                                posibilidad de crecer constantemente y
+                                desarrollar una floración más larga. Las sativas
+                                son naturalmente más aptas para el cultivo en
+                                exterior y climas cálidos, aunque se pueden
+                                obtener buenos resultados en interior si se les
+                                dedica atención.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="
+                            col-sm-12 col-md-12 col-lg-4
+                            xl-4
+                            d-flex
+                            justify-content-start
+                            my-5
+                        "
+                    >
+                        <div>
+                            <h3>Variedades</h3>
+                            <h4 class="plants__general">Híbrida</h4>
+                            <p>
+                                El Cannabis híbrido, al contrario que las cepas
+                                puras, es aquella raza con genes de Sativa e
+                                Índica. Aparece por la demanda de Cannabis que
+                                ofreciera un equilibrio psicoactivo. También se
+                                pueden conseguir diferentes sabores mediante la
+                                combinación genética de especies de Cannabis
+                                Índica con Sativa. Si buscas una marihuana que
+                                no te deje muy apagado, posiblemente este sea tu
+                                tipo. Gracias a la combinación genética
+                                obtendremos los mejor de amabas variedades, lo
+                                que nos garantiza efectos psicoactivos muy
+                                diferentes.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="
+                            col-sm-12 col-md-12 col-lg-4
+                            xl-4
+                            d-flex
+                            justify-content-start
+                            my-5
+                        "
+                    >
+                        <div>
+                            <h4 class="plants__general">Características</h4>
+                            <ul class="fs-5 caracteristicas">
                                 <li class="caracteristicas__list">
                                     Son mas altas
                                 </li>
@@ -317,298 +376,237 @@
                                 </li>
                             </ul>
                         </div>
-                        <!-- fin Caracteristicas variedad uno -->
-                        <div class="position">
-                            <img
-                                class="image"
-                                src="https://www.alchimiaweb.com/blog/wp-content/uploads/2017/04/Estructura-planta-indica-MASTERKUSH.jpg"
-                                alt="Orange Sherbet"
-                            />
-                        </div>
-                    </article>
-                </section>
-                <section>
-                    <!-- variedad dos -->
-                    <article class="plants">
-                        <div class="border_title1">
-                            <h4 class="plants__general">Sativa</h4>
-                            <p class="plants__general--decoration">
-                                Son plantas con un mayor periodo de crecimiento,
-                                incluso durante la floración, muy altas. Las
-                                hojas tienen foliolos más angostos que los de
-                                las índicas y un verde menos intenso. En las
-                                zonas cercanas al ecuador, de las que son
-                                originarias, hay mucha luz y poca variación de
-                                horas de exposición entre el invierno y el
-                                verano, por lo que la planta tiene la
-                                posibilidad de crecer constantemente y
-                                desarrollar una floración más larga. Las sativas
-                                son naturalmente más aptas para el cultivo en
-                                exterior y climas cálidos, aunque se pueden
-                                obtener buenos resultados en interior si se les
-                                dedica atención.
-                            </p>
-                        </div>
-                        <br />
-                        <br />
-                        <!-- caracteristicas variedad dos -->
-                        <div>
-                            <h5 class="title1">Características</h5>
-                        </div>
-                        <ul class="caracteristicas">
-                            <li class="caracteristicas__list">Son mas bajas</li>
-                            <li class="caracteristicas__list">
-                                Poca distancia internodal
-                            </li>
-                            <li class="caracteristicas__list">
-                                De floración corta
-                            </li>
-                            <li class="caracteristicas__list">
-                                Hojas con foliolos anchos
-                            </li>
-                            <li class="caracteristicas__list">
-                                Cogollos compactos
-                            </li>
-                            <li class="caracteristicas__list">
-                                Crecen poco en floración
-                            </li>
-                            <li class="caracteristicas__list">
-                                Necesitan menor intensidad lúminica
-                            </li>
-                            <li class="caracteristicas__list">
-                                Son de climas templados con mucha variación
-                                lúminica
-                            </li>
-                            <li class="caracteristicas__list">
-                                Efecto corporal y relajante
-                            </li>
-                        </ul>
-                        <!-- fin caracteristicas variedad dos -->
-                        <div class="position">
-                            <img
-                                class="image"
-                                src="https://sensiseeds.com/blog/wp-content/uploads/2019/12/growing-cannabis-1024x1024.jpg"
-                                alt="Lemon King"
-                            />
-                        </div>
-                    </article>
-                </section>
-                <section>
-                    <!-- variedad tres -->
-                    <article class="plants">
-                        <div class="border_title1">
-                            <h4 class="plants__general">Híbrida</h4>
-                            <p class="plants__general--decoration">
-                                El Cannabis híbrido, al contrario que las cepas
-                                puras, es aquella raza con genes de Sativa e
-                                Índica. Aparece por la demanda de Cannabis que
-                                ofreciera un equilibrio psicoactivo. También se
-                                pueden conseguir diferentes sabores mediante la
-                                combinación genética de especies de Cannabis
-                                Índica con Sativa. Si buscas una marihuana que
-                                no te deje muy apagado, posiblemente este sea tu
-                                tipo. Gracias a la combinación genética
-                                obtendremos los mejor de amabas variedades, lo
-                                que nos garantiza efectos psicoactivos muy
-                                diferentes.
-                            </p>
-                        </div>
-                        <div>
-                            <h5 class="title1">Características</h5>
-                        </div>
-                        <ul class="caracteristicas">
-                            <li class="caracteristicas__list">
-                                Indica x índica: se trata de una combinación
-                                genética de dos razas de cannabis índica
-                            </li>
-                            <li class="caracteristicas__list">
-                                Sativa x sativa: como en el caso anterior, se
-                                trata del cruce de dos cepas sativa
-                            </li>
-                            <li class="caracteristicas__list">
-                                Indica x sativa: se trata de una cepa de
-                                marihuana híbrida con dominancia índica. Por lo
-                                que presenta características de ambas, siendo la
-                                Índica la que más se manifiesta.
-                            </li>
-                            <li class="caracteristicas__list">
-                                Sativa x índica: esta variedad tiene rasgos de
-                                Índica y Sativa, siendo esta última la más
-                                dominante.
-                            </li>
-                        </ul>
-                        <div class="position">
-                            <img
-                                class="image"
-                                src="https://www.cosechalibre.com/wp-content/uploads/banana-blaze-photoperiod-heavy-lst-day-64-1024x1024-3.jpg"
-                                alt="New York 47 de World Of Seeds"
-                            />
-                        </div>
-                    </article>
-                </section>
-            </main>
-            <footer class="bg-dark">
-                <div class="container-fluid navbar">
-                    <h2 class="row text-light">
-                        Términos y condiciones - Producción Nacional - Argentina
-                        - 2021
-                    </h2>
-                    <!-- Button trigger modal -->
-                    <button
-                        type="button"
-                        class="fs-2 btn btn-primary"
-                        data-bs-toggle="modal"
-                        data-bs-target="#exampleModal"
-                    >
-                        SUSCRIBITE!
-                    </button>
-                    <!-- Modal -->
+                    </div>
                     <div
-                        class="modal fade text-dark"
-                        id="exampleModal"
-                        tabindex="-1"
-                        aria-labelledby="exampleModalLabel"
-                        aria-hidden="true"
+                        class="
+                            col-sm-12 col-md-12 col-lg-4
+                            xl-4
+                            d-flex
+                            justify-content-start
+                            my-5
+                        "
                     >
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <h1>Suscribite!</h1>
-                                <div class="modal-header">
-                                    <h5
-                                        class="modal-title"
-                                        id="exampleModalLabel"
-                                    >
-                                        Se parte del Club
-                                    </h5>
-                                    <button
-                                        type="button"
-                                        class="btn-close"
-                                        data-bs-dismiss="modal"
-                                        aria-label="Close"
-                                    ></button>
-                                </div>
-                                <div class="modal-body">
-                                    <!-- Formulario MODAL -->
-                                    <form
-                                        class="
-                                            fw-bold
-                                            bg-dark
-                                            container1
-                                            border
-                                            p-4
-                                        "
-                                        action=""
-                                    >
-                                        <div class="row">
-                                            <div class="form-group col-6 mb-3">
-                                                <p>
-                                                    <label
-                                                        class="text-light mb-2"
-                                                        for="fullname"
-                                                        >Nombre y
-                                                        apellido</label
-                                                    >
-                                                    <input
-                                                        class="form-control"
-                                                        type="text"
-                                                        name="fullname"
-                                                        id="fullname"
-                                                    />
-                                                </p>
-                                            </div>
-                                            <div class="form-group col-6 mb-3">
-                                                <p>
-                                                    <label
-                                                        class="text-light mb-2"
-                                                        for="email"
-                                                        >Email</label
-                                                    >
-                                                    <input
-                                                        class="form-control"
-                                                        type="email"
-                                                        name="email"
-                                                        id="email"
-                                                    />
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="form-group col-6 mb-3">
-                                                <p>
-                                                    <label
-                                                        class="text-light mb-2"
-                                                        for="telefono"
-                                                        >Telefono celular
-                                                        <input
-                                                            class="form-control"
-                                                            type="tel"
-                                                            name="phone"
-                                                            id="phone"
-                                                            pattern="[0-9] {3}-[0-9] {3}-[0-9]{4}"
-                                                        />
-                                                    </label>
-                                                </p>
-                                            </div>
-                                            <div class="form-group col-6 mb-3">
-                                                <p>
-                                                    <label
-                                                        class="text-light mb-2"
-                                                        for="Affair"
-                                                        >Asunto</label
-                                                    >
-                                                    <input
-                                                        class="form-control"
-                                                        type="text"
-                                                        name="affair"
-                                                        id="affair"
-                                                    />
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="
-                                                form-group
-                                                d-flex
-                                                justify-content-center
-                                            "
-                                        >
+                        <div>
+                            <h4 class="plants__general">Caracteristicas</h4>
+                            <ul class="fs-5 caracteristicas">
+                                <li class="caracteristicas__list">
+                                    S on mas bajas
+                                </li>
+                                <li class="caracteristicas__list">
+                                    Poca distancia internodal
+                                </li>
+                                <li class="caracteristicas__list">
+                                    De floración corta
+                                </li>
+                                <li class="caracteristicas__list">
+                                    Hojas con foliolos anchos
+                                </li>
+                                <li class="caracteristicas__list">
+                                    Cogollos compactos
+                                </li>
+                                <li class="caracteristicas__list">
+                                    Crecen poco en floración
+                                </li>
+                                <li class="caracteristicas__list">
+                                    Necesitan menor intensidad lúminica
+                                </li>
+                                <li class="caracteristicas__list">
+                                    Son de climas templados con mucha variación
+                                    lúminica
+                                </li>
+                                <li class="caracteristicas__list">
+                                    Efecto corporal y relajante
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div
+                        class="
+                            col-sm-12 col-md-12 col-lg-4
+                            xl-4
+                            d-flex
+                            justify-content-start
+                            my-5
+                        "
+                    >
+                        <div>
+                            <h4 class="plants__general">Características</h4>
+                            <ul class="fs-5 caracteristicas">
+                                <li class="caracteristicas__list">
+                                    Indica x índica: se trata de una combinación
+                                    genética de dos razas de cannabis índica
+                                </li>
+                                <li class="caracteristicas__list">
+                                    Sativa x sativa: como en el caso anterior,
+                                    se trata del cruce de dos cepas sativa
+                                </li>
+                                <li class="caracteristicas__list">
+                                    Indica x sativa: se trata de una cepa de
+                                    marihuana híbrida con dominancia índica. Por
+                                    lo que presenta características de ambas,
+                                    siendo la Índica la que más se manifiesta.
+                                </li>
+                                <li class="caracteristicas__list">
+                                    Sativa x índica: esta variedad tiene rasgos
+                                    de Índica y Sativa, siendo esta última la
+                                    más dominante.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="bg-dark">
+            <div class="container-fluid navbar">
+                <h2 class="row text-light">
+                    Términos y condiciones - Producción Nacional - Argentina -
+                    2021
+                </h2>
+                <!-- Button trigger modal -->
+                <button
+                    type="button"
+                    class="fs-2 btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                >
+                    SUSCRIBITE!
+                </button>
+                <!-- Modal -->
+                <div
+                    class="modal fade text-dark"
+                    id="exampleModal"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                >
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <h1>Suscribite!</h1>
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">
+                                    Se parte del Club
+                                </h5>
+                                <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                ></button>
+                            </div>
+                            <div class="modal-body">
+                                <!-- Formulario MODAL -->
+                                <form
+                                    class="
+                                        fw-bold
+                                        bg-dark
+                                        container1
+                                        border
+                                        p-4
+                                    "
+                                    action=""
+                                >
+                                    <div class="row">
+                                        <div class="form-group col-6 mb-3">
                                             <p>
-                                                <label class="text-light mb-2"
-                                                    >Mensaje</label
+                                                <label
+                                                    class="text-light mb-2"
+                                                    for="fullname"
+                                                    >Nombre y apellido</label
                                                 >
-                                                <textarea
-                                                    class="
-                                                        form-control form-group
-                                                    "
-                                                    name="message"
-                                                    id="message"
-                                                    rows="3"
-                                                ></textarea>
+                                                <input
+                                                    class="form-control"
+                                                    type="text"
+                                                    name="fullname"
+                                                    id="fullname"
+                                                />
                                             </p>
                                         </div>
-                                        <div
-                                            class="
-                                                d-flex
-                                                justify-content-center
-                                            "
-                                        >
-                                            <p class="block">
-                                                <button
-                                                    class="btn btn-primary"
-                                                    type="submit"
+                                        <div class="form-group col-6 mb-3">
+                                            <p>
+                                                <label
+                                                    class="text-light mb-2"
+                                                    for="email"
+                                                    >Email</label
                                                 >
-                                                    Send
-                                                </button>
+                                                <input
+                                                    class="form-control"
+                                                    type="email"
+                                                    name="email"
+                                                    id="email"
+                                                />
                                             </p>
                                         </div>
-                                    </form>
-                                </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-6 mb-3">
+                                            <p>
+                                                <label
+                                                    class="text-light mb-2"
+                                                    for="telefono"
+                                                    >Telefono celular
+                                                    <input
+                                                        class="form-control"
+                                                        type="tel"
+                                                        name="phone"
+                                                        id="phone"
+                                                        pattern="[0-9] {3}-[0-9] {3}-[0-9]{4}"
+                                                    />
+                                                </label>
+                                            </p>
+                                        </div>
+                                        <div class="form-group col-6 mb-3">
+                                            <p>
+                                                <label
+                                                    class="text-light mb-2"
+                                                    for="Affair"
+                                                    >Asunto</label
+                                                >
+                                                <input
+                                                    class="form-control"
+                                                    type="text"
+                                                    name="affair"
+                                                    id="affair"
+                                                />
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="
+                                            form-group
+                                            d-flex
+                                            justify-content-center
+                                        "
+                                    >
+                                        <p>
+                                            <label class="text-light mb-2"
+                                                >Mensaje</label
+                                            >
+                                            <textarea
+                                                class="form-control form-group"
+                                                name="message"
+                                                id="message"
+                                                rows="3"
+                                            ></textarea>
+                                        </p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <p class="block">
+                                            <button
+                                                class="btn btn-primary"
+                                                type="submit"
+                                            >
+                                                Send
+                                            </button>
+                                        </p>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
-            </footer>
-        </div>
+            </div>
+        </footer>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"

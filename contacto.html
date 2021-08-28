@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Cannabis Club House</title>
         <!-- CSS Style -->
         <link rel="stylesheet" href="css/style.css" />
@@ -48,186 +48,217 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         />
-                <!-- Boostrap -->
-                <link
-                href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
-                rel="stylesheet"
-                integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
-                crossorigin="anonymous"
-            />
+        <!-- Boostrap -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+            crossorigin="anonymous"
+        />
     </head>
     <!-- Principal Content -->
     <body class="body">
-        <div class="container-fluid">
+        <!--start nav-->
+        <div class="container">
             <div class="row">
-            <header class="header col-xs-4 col-sm-4 col-md-6 col-lg-12">
-                <div class="row">
-                <div class="col-xs-4 col-sm-4 col-md-6 col-lg-12">
-                    <a href="index.html"
-                        ><img
-                            class="header__title--img"
-                            src="https://img.freepik.com/free-vector/leaf-marijuana-light-silhouette-dark-background-vintage-styled-illustration_148087-142.jpg?size=338&ext=jpg&ga=GA1.2.1719186521.1625184000"
-                            alt="logo"
-                    /></a>
-                </div>
-                </div>
-                <!--start nav-->
-            <div class="row">
-                <nav class="navigation navbar navbar-expand-lg navbar-light bg-dark col-xs-3 col-sm-3 col-md-6 col-lg-12">
-                        <a class="navbar-brand" href="#"></a>
-                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <nav
+                    class="
+                        navbar
+                        fixed-top
+                        navbar-expand-lg navbar-light
+                        bg-dark
+                    "
+                >
+                    <a href="" class="navbar-brand"
+                        ><a href="index.html"
+                            ><img
+                                src="https://img.freepik.com/free-vector/leaf-marijuana-light-silhouette-dark-background-vintage-styled-illustration_148087-142.jpg?size=338&ext=jpg&ga=GA1.2.1719186521.1625184000"
+                                class="header__title--img"
+                                alt="logo"
+                        /></a>
+                    </a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
                         <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link active text-light" aria-current="page" href="quienesSomos.html">Quienes Somos</a>
-                                </li>
-                                <li  class="nav-item">
-                                    <a class="nav-link text-light" href="legal.html"
-                                >Información legal</a>
-                                </li>
-                                <li  class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle text-light" href="cursos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="fa lse">Cursos
-                                    </a>
-                                    <!--start menu desplegable-->
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown"  >
-                                        <li>
-                                            <a class="dropdown-item fs-2" href="cursos.html#vegetacionExterior"
-                                        >Vegetación en exterior</a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item fs-2" href="cursos.html#vegetacionInterior"
-                                        >Vegetación en interior</a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item fs-2" href="cursos.html#aceitesMedicinales"
-                                        >Aceites medicinales</a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item fs-2" href="cursos.html#reikiManejoDeChakras"
-                                        >Reiki y Manejo de chakras</a>
-                                        </li>
-                                    </ul>
-                                    <!--end menu desplegable-->
-                                </li>
-                                        <li  class="nav-item">
-                                            <a class="nav-link text-light" href="membresia.html">Membresía & Faqs</a>
-                                        </li>
-                                        <li  class="nav-item">
-                                            <a class="nav-link text-light" href="contacto.html">Contacto</a>
-                                        </li>
-                            </ul>
-                        <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                        </form>
-                        <!--end menu-->
-                        </div>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="quienesSomos.html" class="nav-link"
+                                    >Quienes somos</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a href="legal.html" class="nav-link"
+                                    >Información legal</a
+                                >
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a
+                                    href="#"
+                                    class="nav-link dropdown-toggle"
+                                    id="navbarDropdown"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                    >Cursos</a
+                                >
+                                <ul
+                                    class="dropdown-menu"
+                                    aria-labelledby="navbarDropdown"
+                                >
+                                    <li>
+                                        <a href="#" class="dropdown-item">
+                                            Vegetación en exterior</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-item"
+                                            >Vegetación en interior</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-item"
+                                            >Aceites medicinales</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-item"
+                                            >Espiritual- Reiki y chakras</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-bar active">
+                                <a href="membresia.html" class="nav-link">
+                                    Membresía & FAQS</a
+                                >
+                            </li>
+                            <li class="nav-bar active">
+                                <a href="contacto.html" class="nav-link"
+                                    >Contacto</a
+                                >
+                            </li>
+                        </ul>
                     </div>
+                    <form action="#" class="d-flex">
+                        <input type="text" class="form-control me-2" />
+                        <button type="submit" class="btn btn-outline-success">
+                            Buscar
+                        </button>
+                    </form>
                 </nav>
             </div>
-                <!--end nav-->
-            </header>
-            <!-- formulario de contacto -->
-            <div class="row">
-            <div class="content2 col-xs-4 col-sm-4 col-md-6 col-lg-12">
-            <h1 class="logo2">Contact <span>Us</span></h1>
-            <div class="contact-wrapper">
-                <div class="contact-form">
-                    <h3>Contact us</h3>
-                    <form action="">
-                        <p>
-                            <label for="fullname">Nombre y apellido</label>
-                            <input type="text" name="fullname" id="fullname" />
-                        </p>
-                        <p>
-                            <label for="email">Email</label>
-                            <input type="email" name="email" id="email" />
-                        </p>
-                        <p>
-                            <label for="telefono"
-                                >Telefono celular
-                                <input
-                                    type="tel"
-                                    name="phone"
-                                    id="phone"
-                                    pattern="[0-9] {3}-[0-9] {3}-[0-9]{4}"
-                                />
-                            </label>
-                        </p>
-                        <p>
-                            <label for="Affair">Asunto</label>
-                            <input type="text" name="affair" id="affair" />
-                        </p>
-                        <p class="block">
-                            <label>Mensaje</label>
-                            <textarea
-                                name="message"
-                                id="message"
-                                rows="3"
-                            ></textarea>
-                        </p>
-                        <p class="block">
-                            <button type="submit">Send</button>
-                        </p>
-                    </form>
-                </div>
-                </div>
-                <div class="contact-info">
-                    <h4>More info</h4>
-                    <ul>
-                        <li>
-                            <ion-icon name="phone-portrait-outline"></ion-icon
-                            >(011)34455411
-                        </li>
-                        <li>
-                            <ion-icon name="logo-facebook"></ion-icon>Segui
-                            Verde Socios
-                        </li>
-                        <li>
-                            <ion-icon name="logo-twitter"></ion-icon>Segui Verde
-                            Club
-                        </li>
-                        <li>
-                            <ion-icon name="logo-instagram"></ion-icon>Somos
-                            segui Verde
-                        </li>
-                        <li>
-                            <ion-icon name="home-outline"></ion-icon>Capital
-                            Federal - La Paternal
-                        </li>
-                    </ul>
-                    <p>
-                        Nos podrás encontrar en estas direcciones para estar al
-                        tanto de todas las novedades del Club! Segui Verde para
-                        todos!
-                    </p>
-                </div>
-            </div>
-            <div class="row d-flex">
-            <div class="footer col-xs-3 col-sm-3 col-md-6 col-lg-12 ">
-            <footer>
-            Términos y condiciones - Producción Nacional - Argentina - 2021
-            </footer>
-            </div>
         </div>
-        </div>   
-        </div>  
-        <script
-                src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-                crossorigin="anonymous"
-            ></script>
-            <script
-                src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
-                integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
-                crossorigin="anonymous"
-            ></script>
-            <script
-                src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
-                integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
-                crossorigin="anonymous"
-            ></script>  
+        <!-- Form contact -->
+        <div class="container">
+            <form class="form">
+                <h2 class="form__title">Contáctese con nosotros</h2>
+                <p class="form__text">
+                    Agradecemos el interés por contactarse con nosotros, si
+                    desea recibir mayor información sobre el Club, por favor
+                    rellene el siguiente formulario y estaremos respondiendo a
+                    la brevedad.
+                </p>
+                <hr />
+
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <input
+                            type="text"
+                            name="nombre"
+                            placeholder="Nombre"
+                            required
+                        />
+                        <input
+                            type="text"
+                            name="correo"
+                            placeholder="Ingrese su correo"
+                            required
+                        />
+                        <input
+                            type="text"
+                            name="telefono"
+                            placeholder="Ingresa tu teléfono"
+                            required
+                        />
+                        <input
+                            type="text"
+                            name="empresa"
+                            placeholder="empresa"
+                        />
+                        <textarea
+                            name="mensaje"
+                            id=""
+                            placeholder="Escriba aquí su mensaje"
+                            required
+                        ></textarea>
+                        <input type="submit" value="Enviar" id="boton" />
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <br />
+
+                        <p class="form__info">
+                            <strong
+                                >Conocé todas nuestras redes y seguinos!</strong
+                            >
+                            Podrás saber todas nuestras novedades al instante.
+                        </p>
+                        <div class="redes-container">
+                            <ul>
+                                <li>
+                                    <a
+                                        href="http://www.facebook.com"
+                                        class="facebook"
+                                        ><ion-icon
+                                            name="logo-facebook"
+                                        ></ion-icon>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="http://www.instagram.com"
+                                        class="instragram"
+                                        ><ion-icon
+                                            name="logo-instagram"
+                                        ></ion-icon>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="http://www.twitter.com"
+                                        class="twitter"
+                                    >
+                                        <ion-icon
+                                            name="logo-twitter"
+                                        ></ion-icon>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="http://www.linkedin.com"
+                                        class="linkedin"
+                                        ><ion-icon
+                                            name="logo-linkedin"
+                                        ></ion-icon>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <footer>
+            Términos y condiciones - Producción Nacional - Argentina - 2021
+        </footer>
     </body>
 </html>

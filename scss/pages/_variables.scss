@@ -1,8 +1,41 @@
 // Variables generales
 
 $base-font-size: 16px;
-$background-color: #212838;
+$background-color: #000 !important;
+$margin-color: #001;
 $font-family: "Gowun Dodum", sans-serif;
 $min-height: 100vh;
 $overflow-x: hidden;
 $margin-top: 2rem;
+$text-align: text-aling-justify;
+
+$redes: rgb(134, 255, 104);
+
+// variables para operaciones
+$root-size: 4px;
+$height: 200rem;
+$default-width: 1200px;
+
+// condicionales
+$type: white;
+p {
+    @if $type= #fff {
+        color: #fff;
+    } @else if $type==blue {
+        color: blue;
+    } @else if $type==#fff {
+        color: #fff;
+    } @else {
+        color: rgb(54, 196, 90);
+    }
+}
+
+// Mixins
+@mixin sizes($fontsize, $fontweight) {
+    font-size: $fontsize;
+    font-weight: $fontweight;
+}
+
+p {
+    text-align: justify;
+}

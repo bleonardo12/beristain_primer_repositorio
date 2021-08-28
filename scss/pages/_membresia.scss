@@ -5,10 +5,6 @@
 *::after {
     margin: 0;
     padding: 0;
-    box-sizing: inherit;
-}
-
-html {
     box-sizing: border-box;
 }
 
@@ -26,8 +22,12 @@ html {
 .container3 {
     width: 100%;
     max-width: 80rem;
-    margin: 0 auto;
-    padding: 0 1.5rem;
+    margin: 4 auto;
+    padding: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #011;
 }
 
 .accordion-item {
@@ -80,10 +80,11 @@ html {
     transform: translateY(-50%);
 }
 
-.answer p {
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 1.4rem;
+.answer__parrafo {
+    color: black;
+    font-size: 1.5rem;
     padding: 2rem;
+    font-family: marcellus;
 }
 
 .accordion-item:target .answer {

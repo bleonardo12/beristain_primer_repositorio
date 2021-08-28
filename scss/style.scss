@@ -18,9 +18,7 @@ html {
 @import "pages/cursos.scss";
 @import "pages/membresia";
 @import "pages/contacto";
-
-body {
-    font-size: $base-font-size;
-    background-color: $background-color !important;
-    min-height: $min-height;
-}
+@import "pages/colorGeneral";
+@import "pages/reset";
+@import "componentes/navBar";
+@import "componentes/footer";

@@ -7,6 +7,7 @@
     font-size: 3rem;
     border-bottom: solid #fff 1px;
     z-index: 300;
+    background-color: $background-color;
 }
 
 /* titulo del encabezado */
@@ -17,67 +18,5 @@
     width: 10rem;
     height: 10rem;
     border-radius: 10rem;
-    padding: 2rem;
-    position: relative;
     bottom: 2rem;
-}
-.menu .navigation ul {
-    list-style: none;
-}
-
-.navigation a {
-    list-style: none;
-    text-decoration: none;
-    color: #fff;
-    font-family: "Staatliches", cursive;
-}
-
-.navigation ul ul {
-    display: none;
-}
-
-.navigation > ul {
-    float: left;
-    display: flex;
-    text-decoration: none;
-    list-style: none;
-}
-
-.navigation > ul > li {
-    position: relative;
-    padding-left: 5rem;
-    padding-bottom: 1rem;
-    list-style: none;
-}
-
-.navigation ul li a:hover {
-    display: inline;
-    line-height: 2rem;
-    color: #000;
-    background-color: #58ff4d;
-    transition: all 0.4s linear;
-    border-radius: 5px;
-    padding-left: 2rem 1rem;
-}
-
-.navigation ul li ul {
-    display: none;
-    position: absolute;
-    background-color: #000;
-    border: 1px solid #cccccc;
-    list-style: none;
-    z-index: 500;
-}
-
-.navigation ul li:hover ul {
-    display: block;
-}
-
-.navigation ul li ul li a {
-    line-height: unset;
-    white-space: nowrap;
-}
-
-.navigation ul li ul li a:hover {
-    background-color: #58ff4d;
 }

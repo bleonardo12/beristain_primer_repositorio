@@ -1,120 +1,129 @@
 /* Página interna Contacto */
-* {
-    box-sizing: border-box;
-}
+// reset
 
 .body {
     background: #000;
     color: #fff;
     padding: 0 4rem;
     font-size: 1.5rem;
+    height: $height/2;
 }
 
-.content2 {
-    max-width: 1170px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 3em;
-}
+// Redes Sociales
 
-.logo2 {
-    text-align: center;
-    font-size: 3em;
-}
+.redes-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-.logo2 span {
-    color: #58ff4d;
-}
-
-.contact-wrapper {
-    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
-}
-
-.contact-wrapper > * {
-    padding: 2em;
-}
-
-.contact-form {
-    background: #222;
-}
-
-.contact-form form p {
-    margin: 0;
-    padding: 1em;
-}
-
-.contact-form form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.contact-form form .block {
-    grid-column: 1/3;
-}
-
-.contact-form button,
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 0.7em;
-    border: none;
-    background: none;
-    border-bottom: 1px solid #58ff4d;
-    outline: none;
-    color: #fff;
-}
-
-.contact-form button {
-    background: #58ff4d;
-    color: #000;
-    border: 0;
-    text-transform: uppercase;
-    padding: 1em;
-}
-
-.contact-form form button:hover,
-.contact-form form button:focus {
-    background: #8fc460;
-    color: #fff;
-    transition: backgroud-color 1s ease-out;
-    outline: 0;
-}
-
-.contact-info h4,
-.contact-info ul,
-.contact-info p {
-    text-align: center;
-    margin: 0 0 1rem 0;
-}
-
-.contact-info ul {
-    list-style: none;
-    padding: 0;
-}
-
-.contact-info ul li {
-    padding: 1em;
-}
-
-/* Responsive */
-/* Large Screen */
-@media (min-width: 700px) {
-    .body {
-        padding: 0 4rem;
-    }
-    .contact-wrapper {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-    }
-
-    .contact-wrapper > * {
-        padding: 2em;
-    }
-
-    .contact-info h4,
-    .contact-info ul,
-    .contact-info p {
-        padding: 1em;
+    ul li {
+        display: inline-block;
+        margin: 0 0.5rem;
+        width: 8rem;
+        height: 8rem;
         text-align: center;
     }
+    ul li a {
+        display: block;
+        padding: 0 0.1rem;
+        background-color: rgb(54, 196, 90);
+        color: white;
+        line-height: 5rem;
+        font-size: 1.8rem;
+        box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+    }
+}
+
+.redes-container ul:hover a {
+    filter: blur(2px);
+}
+
+.redes-container ul li a:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
+    filter: none;
+}
+
+.redes-container ul li .facebook:hover {
+    background: $redes;
+}
+.redes-container ul li .instragram:hover {
+    background: $redes;
+}
+.redes-container ul li .twitter:hover {
+    background: $redes;
+}
+.redes-container ul li .linkedin:hover {
+    background: $redes;
+}
+
+// nav
+
+// Formulario
+
+.form {
+    margin: auto;
+    max-width: 100rem;
+    background: #011;
+    padding: 3rem;
+    margin-top: 2rem;
+    box-shadow: 0px 0px 10px grey;
+    border-radius: 0.6rem;
+    box-sizing: border-box;
+
+    &__title {
+        color: rgb(54, 196, 90);
+        text-align: center;
+        margin: 7rem;
+        font-size: 3rem;
+        margin-bottom: 4rem;
+    }
+
+    &__text {
+        text-align: justify;
+        margin-bottom: 4rem;
+        font-family: Marcellus;
+        font-size: 2rem;
+    }
+}
+input,
+textarea {
+    font-size: 1.3rem;
+    color: #fff;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgb(109, 105, 105);
+    outline: none;
+    padding: 1.5rem;
+}
+textarea {
+    min-height: 14rem;
+    max-height: 20rem;
+    max-width: 100%;
+}
+
+#boton {
+    background-color: rgb(54, 196, 90);
+    border-radius: 0.5rem;
+    border: 0.3rem solid gray;
+    cursor: pointer;
+    font-family: marcellus;
+    font-size: 1.6rem;
+    width: 100%;
+    padding: 1.5rem;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#boton:hover {
+    cursor: pointer;
+    background: green;
+}
+
+.form__info {
+    text-align: center;
+    padding: 4rem;
+    font-size: 2rem;
 }
