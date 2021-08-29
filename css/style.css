@@ -1,4 +1,7 @@
 @charset "UTF-8";
+body {
+  font-family: "Roboto", sans-serif; }
+
 * {
   margin: 0;
   padding: 0;
@@ -15,7 +18,8 @@ p {
 
 /* Estructura general */
 body {
-  background-color: #000 !important; }
+  background-color: #000 !important;
+  font-family: "Staatliches"; }
 
 .carousel-inner {
   max-height: 100rem; }
@@ -31,16 +35,6 @@ body {
   background-color: transparent;
   width: 80%; }
 
-.border_title {
-  width: 60%;
-  margin: 0 auto;
-  padding: 20px;
-  /* Creas el borde */
-  border: 5px solid transparent;
-  /* agregas el gradiente a las esquinas */
-  border-image: linear-gradient(to left, #3acfd5 0%, #3a4ed5 50%, #66cc84 100%) 1;
-  border-radius: 30px; }
-
 .border_title1 {
   width: 60%;
   margin: 0 auto;
@@ -54,40 +48,42 @@ body {
   background: transparent;
   text-transform: uppercase; }
 
+p {
+  font-size: 1.3rem;
+  margin-right: 1rem; }
+
 /* Title Section H2 */
 .section__title {
   padding: 5rem;
   margin: 2rem;
-  font-size: 5rem;
-  display: flex; }
+  font-size: 5rem; }
 
 /* Title section decoration parrafo */
 /* General */
 .caracteristicas {
-  list-style-type: circle;
   color: #011;
   font-size: 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: left;
-  align-items: left;
   font-weight: 500;
   padding: 3rem;
   margin: 5rem;
-  border: solid #fff 2px;
-  border-radius: 3rem;
   width: 60%;
   margin: 0 auto;
   padding: 20px;
-  border-radius: 30px; }
+  text-decoration: none;
+  border: 1px solid white;
+  background-color: #011;
+  list-style: none;
+  box-shadow: 20px 20px 20px 20px; }
 
 .caracteristicas__list {
   padding-bottom: 2rem;
-  padding-left: rem;
-  width: 80%;
-  display: flex;
-  justify-items: left;
-  align-items: left; }
+  border: 1px solid #fff;
+  background-color: green;
+  color: white;
+  text-align: center;
+  text-decoration: none; }
 
 .plants {
   padding: 3rem;
@@ -115,12 +111,6 @@ body {
   text-align: center; }
 
 /* Images section */
-.position {
-  padding-top: 2rem;
-  margin: 0;
-  width: 100%;
-  position: relative; }
-
 .contenedor {
   position: relative;
   display: inline-block;
@@ -128,6 +118,9 @@ body {
   justify-content: center; }
 
 .textoEncima {
+  display: flex;
+  text-align: center;
+  justify-content: center;
   position: relative;
   bottom: 60rem;
   left: 10px;
@@ -137,8 +130,7 @@ body {
   font-family: "Marcellus SC", serif; }
 
 .image {
-  display: flex;
-  width: 1280px; }
+  max-width: 1280px; }
 
 @media (max-width: 768px) {
   #intro {
@@ -174,9 +166,10 @@ body {
   gap: 1.6em;
   margin-top: 8rem; }
 
-.container .sidebar img {
-  width: 100%;
-  margin-top: 5px; }
+.container-img {
+  margin-top: 5px;
+  max-width: 100%;
+  background-color: #000; }
 
 .content > .article {
   padding: 20px;
@@ -194,33 +187,48 @@ body {
   align-items: center;
   justify-content: center; }
 
-.border_title2 {
-  /* Creas el borde */
-  border: 5px solid transparent;
-  /* agregas el gradiente a las esquinas */
-  border-image: linear-gradient(to top, #08f300 0%, #ffd344 50%, #12ff75 100%) 1;
-  border-radius: 30px; }
+h4 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, sans-serif;
+  color: white;
+  font-weight: bold; }
+
+img {
+  width: 275px; }
 
 /* Página informacionLegaL */
 .content1 {
+  padding-top: 6rem;
   grid-column: 1/6;
   flex-direction: row;
   align-items: center;
   justify-content: end;
-  padding-bottom: 0rem; }
+  padding-bottom: 0rem;
+  font-size: 1rem; }
 
-.content1__title {
+.legal {
   color: #fff;
-  text-align: center;
+  text-align: left;
   font-size: 3rem;
-  font-family: "Staatliches", cursive;
   font-weight: 400;
-  padding-top: 2rem; }
-
-.sectionInformacionLegal {
-  flex-direction: row;
-  justify-content: center;
-  align-items: center; }
+  padding-top: 8rem;
+  border: 1px solid green;
+  padding: 3rem;
+  box-shadow: 2px 2px 5px 5px; }
+  .legal__title {
+    flex-direction: row;
+    justify-content: left;
+    align-items: left;
+    font-size: 3rem;
+    padding-bottom: 2rem; }
+  .legal__article {
+    padding-bottom: 2rem; }
+  .legal .legal__article--title {
+    padding: 1.5rem;
+    font-size: 2rem;
+    border-bottom: 2px solid white;
+    box-shadow: 0px 0px 0px 2px; }
+  .legal__parrafo {
+    font-weight: 300; }
 
 .decorationText {
   font-size: 2rem; }
@@ -233,7 +241,8 @@ body {
   width: 60%; }
 
 .decorationText__title--parrafo {
-  color: #fff; }
+  color: #fff;
+  font-size: 2rem; }
 
 .span {
   font-style: italic;
@@ -255,39 +264,10 @@ body {
   font-size: 2rem;
   padding: 3rem; }
 
-/* parrafos */
-.section {
-  font-size: 1em; }
-
-.section__title--decoration2 {
-  text-align: center;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  justify-content: center; }
-
-.title3 {
-  margin: 0 2rem;
-  padding: 0 2rem; }
-
-/* formulario radio bottom */
-.formulario {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
-  position: relative;
-  color: #fff;
-  font-size: 2rem;
-  left: 50rem;
-  /* Creas el borde */
-  border: 5px solid transparent;
-  /* agregas el gradiente a las esquinas */
-  border-image: linear-gradient(to top, #08f300 0%, #ffd344 50%, #12ff75 100%) 1;
-  border-radius: 30px; }
-
 /* Página interna membresía */
+body {
+  font-family: "Staatliches"; }
+
 *,
 *::before,
 *::after {
@@ -306,13 +286,12 @@ body {
 
 .container3 {
   width: 100%;
-  max-width: 80rem;
-  margin: 4 auto;
-  padding: auto;
+  max-width: 60rem;
+  padding: 0rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #011; }
+  background-color: #36c45a; }
 
 .accordion-item {
   background-color: #283042;
@@ -484,6 +463,9 @@ body {
   font-size: 16px;
   background-color: #000 !important;
   min-height: 100vh; }
+
+body {
+  font-family: "Roboto", sans-serif; }
 
 nav ul {
   list-style: none; }

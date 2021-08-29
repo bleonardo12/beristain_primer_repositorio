@@ -1,5 +1,8 @@
 // reset
 
+body {
+    font-family: "Roboto", sans-serif;
+}
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +18,7 @@ html {
 @import "componentes/header.scss";
 @import "pages/quienesSomos.scss";
 @import "pages/legal.scss";
-@import "pages/cursos.scss";
+
 @import "pages/membresia";
 @import "pages/contacto";
 @import "pages/colorGeneral";

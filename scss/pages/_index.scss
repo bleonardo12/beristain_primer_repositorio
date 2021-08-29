@@ -1,6 +1,7 @@
 /* Estructura general */
 body {
     background-color: $background-color;
+    font-family: "Staatliches";
 }
 
 .carousel-inner {
@@ -19,31 +20,10 @@ body {
     width: 80%;
 }
 
-.border_title {
-    width: 60%;
-    margin: 0 auto;
-    padding: 20px;
-
-    /* Creas el borde */
-    border: 5px solid transparent;
-
-    /* agregas el gradiente a las esquinas */
-    border-image: linear-gradient(
-            to left,
-            #3acfd5 0%,
-            #3a4ed5 50%,
-            rgb(102, 204, 132) 100%
-        )
-        1;
-
-    border-radius: 30px;
-}
-
 .border_title1 {
     width: 60%;
     margin: 0 auto;
     padding: 20px;
-
     border-radius: 30px;
 }
 
@@ -55,13 +35,17 @@ body {
     text-transform: uppercase;
 }
 
+p {
+    font-size: 1.3rem;
+    margin-right: 1rem;
+}
+
 /* Title Section H2 */
 
 .section__title {
     padding: 5rem;
     margin: 2rem;
     font-size: 5rem;
-    display: flex;
 }
 
 /* Title section decoration parrafo */
@@ -69,32 +53,30 @@ body {
 /* General */
 
 .caracteristicas {
-    list-style-type: circle;
     color: #011;
     font-size: 1rem;
     display: flex;
     flex-direction: column;
-    justify-content: left;
-    align-items: left;
     font-weight: 500;
     padding: 3rem;
     margin: 5rem;
-    border: solid #fff 2px;
-    border-radius: 3rem;
     width: 60%;
     margin: 0 auto;
     padding: 20px;
-
-    border-radius: 30px;
+    text-decoration: none;
+    border: 1px solid white;
+    background-color: #011;
+    list-style: none;
+    box-shadow: 20px 20px 20px 20px;
 }
 
 .caracteristicas__list {
     padding-bottom: 2rem;
-    padding-left: rem;
-    width: 80%;
-    display: flex;
-    justify-items: left;
-    align-items: left;
+    border: 1px solid #fff;
+    background-color: green;
+    color: white;
+    text-align: center;
+    text-decoration: none;
 }
 
 .plants {
@@ -128,13 +110,6 @@ body {
 
 /* Images section */
 
-.position {
-    padding-top: 2rem;
-    margin: 0;
-    width: 100%;
-    position: relative;
-}
-
 .contenedor {
     position: relative;
     display: inline-block;
@@ -143,6 +118,9 @@ body {
 }
 
 .textoEncima {
+    display: flex;
+    text-align: center;
+    justify-content: center;
     position: relative;
     bottom: 60rem;
     left: 10px;
@@ -152,8 +130,7 @@ body {
     font-family: "Marcellus SC", serif;
 }
 .image {
-    display: flex;
-    width: 1280px;
+    max-width: 1280px;
 }
 
 // MEDIA QUERIES

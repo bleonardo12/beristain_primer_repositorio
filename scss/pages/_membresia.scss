@@ -1,4 +1,7 @@
 /* Página interna membresía */
+body {
+    font-family: "Staatliches";
+}
 
 *,
 *::before,
@@ -21,13 +24,12 @@
 
 .container3 {
     width: 100%;
-    max-width: 80rem;
-    margin: 4 auto;
-    padding: auto;
+    max-width: 60rem;
+    padding: 0rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #011;
+    background-color: rgb(54, 196, 90);
 }
 
 .accordion-item {

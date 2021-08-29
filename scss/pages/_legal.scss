@@ -1,26 +1,45 @@
 /* Página informacionLegaL */
 .content1 {
+    padding-top: 6rem;
     grid-column: 1/6;
     flex-direction: row;
     align-items: center;
     justify-content: end;
     padding-bottom: 0rem;
+    font-size: 1rem;
 }
-.content1__title {
+
+.legal {
     color: #fff;
-    text-align: center;
+    text-align: left;
     font-size: 3rem;
-    font-family: "Staatliches", cursive;
     font-weight: 400;
-    padding-top: 2rem;
-}
+    padding-top: 8rem;
+    border: 1px solid green;
+    padding: 3rem;
+    box-shadow: 2px 2px 5px 5px;
 
-.sectionInformacionLegal {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
+    &__title {
+        flex-direction: row;
+        justify-content: left;
+        align-items: left;
+        font-size: 3rem;
+        padding-bottom: 2rem;
+    }
+    &__article {
+        padding-bottom: 2rem;
+    }
 
+    .legal__article--title {
+        padding: 1.5rem;
+        font-size: 2rem;
+        border-bottom: 2px solid white;
+        box-shadow: 0px 0px 0px 2px;
+    }
+    &__parrafo {
+        font-weight: 300;
+    }
+}
 .decorationText {
     font-size: 2rem;
 }
@@ -35,6 +54,7 @@
 
 .decorationText__title--parrafo {
     color: #fff;
+    font-size: 2rem;
 }
 .span {
     font-style: italic;
