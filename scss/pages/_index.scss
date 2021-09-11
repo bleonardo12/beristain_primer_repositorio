@@ -1,7 +1,6 @@
 /* Estructura general */
 body {
     background-color: $background-color;
-    font-family: "Staatliches";
 }
 
 .carousel slide {
@@ -40,6 +39,7 @@ img {
     -o-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     transition: all 0.3s ease;
+    margin-top: 2rem;
 }
 .titulos:hover {
     cursor: pointer;
@@ -53,7 +53,7 @@ img {
 }
 
 .title {
-    color: #fff;
+    color: #000;
     text-align: center;
     font-size: 3rem;
     background: transparent;
@@ -92,18 +92,72 @@ p {
     border: 3px solid white;
     background-color: #011;
     list-style: none;
-    box-shadow: 20px 20px 20px 20px;
+    box-shadow: 10px 10px 8px 8px;
 }
 .contenedor2 {
     border: 1px white solid;
-    background-color: rgb(54, 196, 90);
+    background-color: #010301;
     padding: 1rem;
+    box-shadow: 5px 5px 3px 3px;
+
+    .contenedor2__parrafo {
+        color: #011;
+        font-size: 1.5em;
+        font-family: "Oxygen", sans-serif;
+        font-weight: 700;
+    }
+}
+.wrap {
+    width: 30em;
+    margin: 5em px;
+    display: flex;
+    justify-content: center;
+}
+.tarjeta-wrap {
+    background: rgb(35, 243, 63);
+    margin: 1em;
+    -webkit-perspective: 800;
+    perspective: 800;
+}
+
+.tarjeta {
+    width: 300px;
+    height: 350px;
+    background: rgb(35, 243, 63);
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 0.7s ease;
+    -webkit-box-shadow: 0px 10px 15px -5 rgba(0, 0, 0, 0.65);
+    -moz-box-shadow: 0px 10px 15px -5 rgba(0, 0, 0, 0.65);
+    box-shadow: 0px 10px 15px -5 rgba(0, 0, 0, 0.65);
+}
+.adelante,
+.atras {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.atras {
+    transform: rotateY(180deg);
+}
+
+.tarjeta-wrap:hover .tarjeta {
+    transform: rotateY(180deg);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .caracteristicas__list {
     padding-bottom: 2rem;
     border: 1px solid #fff;
-    background-color: rgb(54, 196, 90);
-    color: white;
+    background-color: #58ff4d;
+    color: #011;
     text-align: center;
     text-decoration: none;
 }
@@ -111,15 +165,13 @@ p {
 .plants {
     padding: 3rem;
     margin: 2rem;
-    color: #fff;
+    color: #000;
     font-weight: 300;
 }
 
 .plants__general {
     font-size: 3rem;
     text-align: center;
-    padding-bottom: 2rem;
-    padding-top: 0rem;
 }
 
 .plants__general--decoration {
@@ -147,13 +199,14 @@ p {
 
 .textoEncima {
     position: absolute;
-    font-size: 6rem;
-    color: white;
-    font-weight: 400;
+    font-size: 5.5em;
+    color: #000;
+    font-weight: 600;
     font-family: "Marcellus SC", serif;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-shadow: #58ff4d;
 }
 
 // MEDIA QUERIES

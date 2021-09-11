@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Kaisei Tokumin", serif; }
+  font-family: "Oxygen", sans-serif; }
 
 html {
   font-size: 62.5%; }
@@ -16,8 +16,7 @@ p {
 
 /* Estructura general */
 body {
-  background-color: #000 !important;
-  font-family: "Staatliches"; }
+  background-color: #000 !important; }
 
 .carousel slide {
   width: 96%;
@@ -52,7 +51,8 @@ img {
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
-  transition: all 0.3s ease; }
+  transition: all 0.3s ease;
+  margin-top: 2rem; }
 
 .titulos:hover {
   cursor: pointer;
@@ -65,7 +65,7 @@ img {
   border-radius: 30px; }
 
 .title {
-  color: #fff;
+  color: #000;
   text-align: center;
   font-size: 3rem;
   background: transparent;
@@ -98,32 +98,80 @@ p {
   border: 3px solid white;
   background-color: #011;
   list-style: none;
-  box-shadow: 20px 20px 20px 20px; }
+  box-shadow: 10px 10px 8px 8px; }
 
 .contenedor2 {
   border: 1px white solid;
-  background-color: #36c45a;
-  padding: 1rem; }
+  background-color: #010301;
+  padding: 1rem;
+  box-shadow: 5px 5px 3px 3px; }
+  .contenedor2 .contenedor2__parrafo {
+    color: #011;
+    font-size: 1.5em;
+    font-family: "Oxygen", sans-serif;
+    font-weight: 700; }
+
+.wrap {
+  width: 30em;
+  margin: 5em px;
+  display: flex;
+  justify-content: center; }
+
+.tarjeta-wrap {
+  background: #23f33f;
+  margin: 1em;
+  -webkit-perspective: 800;
+  perspective: 800; }
+
+.tarjeta {
+  width: 300px;
+  height: 350px;
+  background: #23f33f;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: 0.7s ease;
+  -webkit-box-shadow: 0px 10px 15px -5 rgba(0, 0, 0, 0.65);
+  -moz-box-shadow: 0px 10px 15px -5 rgba(0, 0, 0, 0.65);
+  box-shadow: 0px 10px 15px -5 rgba(0, 0, 0, 0.65); }
+
+.adelante,
+.atras {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+.atras {
+  transform: rotateY(180deg); }
+
+.tarjeta-wrap:hover .tarjeta {
+  transform: rotateY(180deg);
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
 
 .caracteristicas__list {
   padding-bottom: 2rem;
   border: 1px solid #fff;
-  background-color: #36c45a;
-  color: white;
+  background-color: #58ff4d;
+  color: #011;
   text-align: center;
   text-decoration: none; }
 
 .plants {
   padding: 3rem;
   margin: 2rem;
-  color: #fff;
+  color: #000;
   font-weight: 300; }
 
 .plants__general {
   font-size: 3rem;
-  text-align: center;
-  padding-bottom: 2rem;
-  padding-top: 0rem; }
+  text-align: center; }
 
 .plants__general--decoration {
   margin: 3rem;
@@ -146,13 +194,14 @@ p {
 
 .textoEncima {
   position: absolute;
-  font-size: 6rem;
-  color: white;
-  font-weight: 400;
+  font-size: 5.5em;
+  color: #000;
+  font-weight: 600;
   font-family: "Marcellus SC", serif;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+  text-shadow: #58ff4d; }
 
 @media (max-width: 768px) {
   #intro {
@@ -162,16 +211,6 @@ p {
     text-align: center; } }
 
 /* Encabezado */
-.header {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 3rem;
-  border-bottom: solid #fff 1px;
-  z-index: 300;
-  background-color: #000 !important; }
-
 /* titulo del encabezado */
 /* logo */
 .header__title--img {
@@ -183,10 +222,9 @@ p {
 /* Página interna quienesSomos */
 /* Grid */
 .container {
-  background-color: #000;
   display: grid;
-  gap: 1.6em;
-  margin-top: 8rem; }
+  gap: 3em;
+  margin: 8em; }
 
 .container-img {
   margin-top: 5px;
@@ -203,16 +241,18 @@ p {
   padding: 10px;
   font-size: 15px; }
 
-/* Map section Quienes Somos */
-.ubicacion {
-  display: flex;
-  align-items: center;
-  justify-content: center; }
+.parrafo {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 1.5em; }
 
-h4 {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif, sans-serif;
+.border_title2 {
+  font-family: "Barlow Semi Condensed", sans-serif;
   color: white;
-  font-weight: bold; }
+  font-weight: bold;
+  font-size: 2em; }
+
+.estructura {
+  border: 1px solid white; }
 
 img {
   width: 275px; }
@@ -491,7 +531,7 @@ nav ul {
 nav a {
   list-style: none;
   text-decoration: none;
-  color: #fff;
+  color: #fff !important;
   font-family: "Staatliches", cursive;
   font-size: 2.3rem; }
 
@@ -522,7 +562,7 @@ nav ul li ul {
   display: none;
   position: absolute;
   background-color: #000;
-  border: 1px solid #cccccc;
+  border: 1px solid #9c9c9c;
   list-style: none;
   z-index: 500; }
 

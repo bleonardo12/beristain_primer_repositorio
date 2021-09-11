@@ -2,10 +2,9 @@
 
 /* Grid */
 .container {
-    background-color: #000;
     display: grid;
-    gap: 1.6em;
-    margin-top: 8rem;
+    gap: 3em;
+    margin: 8em;
 }
 
 .container-img {
@@ -26,18 +25,20 @@
     font-size: 15px;
 }
 
-/* Map section Quienes Somos */
-.ubicacion {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.parrafo {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 1.5em;
 }
 
-h4 {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-        sans-serif, sans-serif;
+.border_title2 {
+    font-family: "Barlow Semi Condensed", sans-serif;
     color: white;
     font-weight: bold;
+    font-size: 2em;
+}
+
+.estructura {
+    border: 1px solid white;
 }
 
 img {
