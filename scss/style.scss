@@ -1,0 +1,24 @@
+// reset
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oxygen", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+@import "pages/variables";
+@import "pages/index.scss";
+@import "componentes/header.scss";
+@import "pages/quienesSomos.scss";
+@import "pages/legal.scss";
+@import "pages/membresia";
+@import "pages/contacto";
+@import "pages/colorGeneral";
+@import "pages/reset";
+@import "componentes/navBar";
+@import "componentes/footer";

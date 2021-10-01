@@ -1,0 +1,64 @@
+/* Página interna quienesSomos */
+
+/* Grid */
+.container {
+    display: grid;
+    gap: 3em;
+    margin: 8em;
+}
+
+.img2 {
+    height: 35rem;
+    width: 27rem;
+    padding-top: 3rem;
+}
+
+.content > .article {
+    padding: 20px;
+    margin-top: 5px;
+    color: #fff;
+}
+
+.content > .article h4,
+.content > .article p {
+    padding: 10px;
+    font-size: 15px;
+}
+
+.parrafo {
+    font-family: $font-family2;
+    font-size: 1.9em;
+    font-weight: 400;
+}
+
+.border_title2 {
+    font-family: $font-family3;
+    color: rgb(61, 219, 61);
+    font-weight: 200;
+    font-size: 3em;
+    text-align: center;
+}
+
+.border_title3 {
+    font-family: $font-family3;
+    color: rgb(31, 28, 28);
+    font-weight: 200;
+    font-size: 3em;
+    text-align: center;
+}
+
+.estructura {
+    border: 2px solid white;
+    padding: 0;
+    margin: 0;
+}
+
+.title__img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 10rem;
+    bottom: 2rem;
+    position: relative;
+    right: 2rem;
+    bottom: 3rem;
+}

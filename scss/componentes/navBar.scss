@@ -1,0 +1,59 @@
+nav ul {
+    list-style: none;
+}
+
+nav a {
+    list-style: none;
+    text-decoration: none;
+    color: #fff !important;
+    font-family: "Staatliches", cursive;
+    font-size: 2.3rem;
+}
+
+nav ul ul {
+    display: none;
+}
+
+nav > ul {
+    float: left;
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+}
+
+nav ul li a:hover {
+    display: inline;
+    line-height: 2rem;
+    color: #000;
+    background-color: #58ff4d;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+    padding-left: 2rem 1rem;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: #000;
+    border: 1px solid #9c9c9c;
+    list-style: none;
+    z-index: 500;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li a {
+    line-height: unset;
+    white-space: nowrap;
+}
+
+nav ul li ul li a:hover {
+    background-color: #58ff4d;
+}
+
+a.nav-link {
+    padding: 0;
+    margin: 0;
+}
