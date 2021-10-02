@@ -437,16 +437,6 @@ img {
   display: block; }
 
 /* Página interna Contacto */
-.body {
-  background: #000;
-  color: #fff;
-  padding: 0 4rem;
-  font-size: 1.5rem;
-  height: 100rem; }
-
-p {
-  font-family: "Barlow Semi Condensed", sans-serif; }
-
 .redes-container {
   display: flex;
   align-items: center;
@@ -512,8 +502,8 @@ p {
 
 input,
 textarea {
-  font-size: 1.3rem;
-  color: #fff;
+  font-size: 2rem;
+  color: #000;
   width: 100%;
   border: none;
   border-bottom: 1px solid #6d6969;
