@@ -3,7 +3,8 @@
 body {
     background-color: $background-color;
     box-sizing: border-box;
-    padding: 4rem 4rem 0rem 4rem;
+
+    min-height: 100vh;
 }
 
 // Carousel
@@ -248,9 +249,4 @@ img {
         width: 100% !important;
         text-align: center;
     }
-}
-
-// Label
-.size {
-    width: 1rem;
 }

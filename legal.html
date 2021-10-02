@@ -214,9 +214,9 @@
                 </article>
             </section>
         </main>
-        <footer class="bg-dark">
-            <div class="container-fluid navbar">
-                <h2 class="row text-light">
+        <footer class="footer">
+            <div class="container-fluid navbar footer__container">
+                <h2 class="row text-light footer__title">
                     Términos y condiciones - Producción Nacional - Argentina -
                     2021
                 </h2>
@@ -229,8 +229,8 @@
                 >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
+                        width="35"
+                        height="35"
                         fill="currentColor"
                         class="bi bi-question-circle-fill"
                         viewBox="0 0 16 16"
@@ -242,17 +242,20 @@
                 </button>
                 <!-- Modal -->
                 <div
-                    class="modal fade text-dark"
+                    class="modal fade text-dark backColor__theme"
                     id="exampleModal"
                     tabindex="-1"
                     aria-labelledby="exampleModalLabel"
                     aria-hidden="true"
                 >
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <h1>Suscribite!</h1>
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">
+                    <div class="modal-dialog backColor__theme1">
+                        <div class="modal-content backColor__theme1">
+                            <h1 class="backColor__theme1">Suscribite!</h1>
+                            <div class="modal-header backColor__theme1">
+                                <h5
+                                    class="modal-title backColor__theme1"
+                                    id="exampleModalLabel"
+                                >
                                     Se parte del Club
                                 </h5>
                                 <button
@@ -262,94 +265,158 @@
                                     aria-label="Close"
                                 ></button>
                             </div>
-                            <div class="modal-body">
+                            <div class="modal-body backColor">
                                 <!-- Formulario MODAL -->
                                 <form
-                                    class="row g-3 needs-validation"
+                                    class="
+                                        row
+                                        g-3
+                                        needs-validation
+                                        backColor__color
+                                    "
                                     novalidate
                                 >
-                                    <div class="col-md-4 position-relative">
+                                    <div
+                                        class="
+                                            col-md-4
+                                            position-relative
+                                            backColor__theme
+                                        "
+                                    >
                                         <label
                                             for="validationTooltip01"
-                                            class="form-label"
+                                            class="form-label backColor__theme"
                                             >Nombre</label
                                         >
                                         <input
                                             type="text"
-                                            class="form-control"
+                                            class="
+                                                form-control
+                                                backColor__theme
+                                            "
                                             id="validationTooltip01"
                                             value="Juan Gabriel"
                                             required
                                         />
-                                        <div class="valid-tooltip">
+                                        <div
+                                            class="
+                                                valid-tooltip
+                                                backColor__theme
+                                            "
+                                        >
                                             Looks good!
                                         </div>
                                     </div>
-                                    <div class="col-md-4 position-relative">
+                                    <div
+                                        class="
+                                            col-md-4
+                                            position-relative
+                                            backColor__theme
+                                        "
+                                    >
                                         <label
                                             for="validationTooltip02"
-                                            class="form-label"
+                                            class="form-label backColor__theme"
                                             >Apellido</label
                                         >
                                         <input
                                             type="text"
-                                            class="form-control"
+                                            class="
+                                                form-control
+                                                backColor__theme
+                                            "
                                             id="validationTooltip02"
                                             value="Uzal"
                                             required
                                         />
-                                        <div class="valid-tooltip">
+                                        <div
+                                            class="
+                                                valid-tooltip
+                                                backColor__theme
+                                            "
+                                        >
                                             Looks good!
                                         </div>
                                     </div>
                                     <div class="col-md-4 position-relative">
                                         <label
                                             for="validationTooltipUsername"
-                                            class="form-label"
+                                            class="form-label backColor__theme"
                                             >Username</label
                                         >
-                                        <div class="input-group has-validation">
+                                        <div
+                                            class="
+                                                input-group
+                                                has-validation
+                                                backColor__theme
+                                            "
+                                        >
                                             <span
-                                                class="input-group-text"
+                                                class="
+                                                    input-group-text
+                                                    backColor__theme
+                                                "
                                                 id="validationTooltipUsernamePrepend"
                                                 >@</span
                                             >
                                             <input
                                                 type="text"
-                                                class="form-control"
+                                                class="
+                                                    form-control
+                                                    backColor__theme
+                                                "
                                                 id="validationTooltipUsername"
                                                 aria-describedby="validationTooltipUsernamePrepend"
                                                 required
                                             />
-                                            <div class="invalid-tooltip">
+                                            <div
+                                                class="
+                                                    invalid-tooltip
+                                                    backColor__theme
+                                                "
+                                            >
                                                 Elige un nombre de usuario
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-6 position-relative">
+                                    <div
+                                        class="
+                                            col-md-6
+                                            position-relative
+                                            backColor__theme
+                                        "
+                                    >
                                         <label
                                             for="validationTooltip03"
-                                            class="form-label"
+                                            class="form-label backColor__theme"
                                             >Ciudad</label
                                         >
                                         <input
                                             type="text"
-                                            class="form-control"
+                                            class="
+                                                form-control
+                                                backColor__theme
+                                            "
                                             id="validationTooltip03"
                                             required
                                         />
-                                        <div class="invalid-tooltip">
+                                        <div
+                                            class="
+                                                invalid-tooltip
+                                                backColor__theme
+                                            "
+                                        >
                                             Please provide a valid city.
                                         </div>
                                     </div>
                                     <div class="col-md-3 position-relative">
                                         <label
                                             for="validationTooltip04"
-                                            class="form-label"
+                                            class="form-label backColor__theme"
                                             >Provincia</label
                                         >
                                         <select
-                                            class="form-select"
+                                            class="form-select backColor__theme"
                                             id="validationTooltip04"
                                             required
                                         >
@@ -358,23 +425,42 @@
                                             </option>
                                             <option>...</option>
                                         </select>
-                                        <div class="invalid-tooltip">
+                                        <div
+                                            class="
+                                                invalid-tooltip
+                                                backColor__theme
+                                            "
+                                        >
                                             Please select a valid state.
                                         </div>
                                     </div>
-                                    <div class="col-md-3 position-relative">
+                                    <div
+                                        class="
+                                            col-md-3
+                                            position-relative
+                                            backColor__theme
+                                        "
+                                    >
                                         <label
                                             for="validationTooltip05"
-                                            class="form-label"
+                                            class="form-label backColor__theme"
                                             >C.P.</label
                                         >
                                         <input
                                             type="text"
-                                            class="form-control"
+                                            class="
+                                                form-control
+                                                backColor__theme
+                                            "
                                             id="validationTooltip05"
                                             required
                                         />
-                                        <div class="invalid-tooltip">
+                                        <div
+                                            class="
+                                                invalid-tooltip
+                                                backColor__theme
+                                            "
+                                        >
                                             Please provide a valid zip.
                                         </div>
                                     </div>

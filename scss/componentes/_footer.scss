@@ -1,19 +1,25 @@
 /* footer */
 
 footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 2rem;
     color: #fff;
+    height: 10rem;
+    padding: 4rem;
+    background-color: #011;
+    align-self: flex-end;
+    line-height: 3;
+    text-align: center;
+    width: 100%;
 }
+
+// Modal
 
 .btn-ttc,
 .btn-ttc:hover,
 .btn-ttc:active {
     color: white !important;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-    background-color: #007da7;
+    background-color: $redes;
 }
 .btn-ttc {
     background-repeat: repeat-x;
@@ -21,4 +27,30 @@ footer {
 }
 .btn-ttc:hover {
     background-position: 0 -15px;
+}
+
+// FORM MODAL
+
+.backColor__color {
+    background-color: $redes;
+    padding: 0;
+    margin: 0;
+}
+
+.backColor__theme {
+    font-family: $font-family3;
+    color: #011;
+}
+
+.backColor__theme1 {
+    font-family: $font-family3;
+    background-color: #000;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+.footer__title {
+    font-family: $font-family;
+    font-size: 2.5rem;
 }
