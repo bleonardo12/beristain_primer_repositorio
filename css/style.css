@@ -16,7 +16,9 @@ p {
 
 /* Estructura general */
 body {
-  background-color: #000 !important; }
+  background-color: #000 !important;
+  box-sizing: border-box;
+  padding: 4rem 4rem 0rem 4rem; }
 
 .carousel slide {
   width: 100%;
@@ -88,11 +90,15 @@ img {
 
 /* Title section decoration parrafo */
 /* General */
-.wrap.contenedor2 {
-  margin: 4rem;
-  padding: 4rem;
-  width: 30em;
-  margin: 5em;
+.seccion {
+  display: flex;
+  position: relative;
+  margin: 3rem;
+  justify-content: center; }
+
+.wrap {
+  margin: 5rem auto;
+  width: 11rem;
   display: flex;
   justify-content: center; }
 
@@ -101,7 +107,8 @@ img {
   -webkit-perspective: 800;
   perspective: 800;
   border: 3px solid #3a3b3a;
-  gap: 30em; }
+  margin: 1rem;
+  box-shadow: 10px 5px 20px 10px; }
 
 .tarjeta {
   width: 400px;
@@ -171,14 +178,11 @@ img {
   width: 100%;
   height: 100%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 1rem;
   text-decoration: none;
   border: 3px solid white;
   background-color: #011;
-  list-style: none;
-  box-shadow: 10px 5px 20px 10px;
-  align-items: center;
-  position: relative; }
+  list-style: none; }
 
 .caracteristicas__list {
   padding: 1rem;
@@ -193,29 +197,6 @@ img {
   font-weight: 400;
   font-family: "Barlow Semi Condensed", sans-serif;
   justify-content: center; }
-
-.plants {
-  padding: 3rem;
-  margin: 2rem;
-  color: #000;
-  font-weight: 300; }
-
-.plants__general {
-  font-size: 3rem;
-  text-align: center; }
-
-.plants__general--decoration {
-  margin: 3rem;
-  padding: 3rem;
-  margin-bottom: 2rem;
-  font-size: 2rem;
-  text-align: justify; }
-
-.title1 {
-  font-size: 3rem;
-  padding-bottom: 2rem;
-  color: #fff;
-  text-align: center; }
 
 /* Images section */
 .imgCarousel {
@@ -244,6 +225,9 @@ img {
   .seccion {
     width: 100% !important;
     text-align: center; } }
+
+.size {
+  width: 1rem; }
 
 /* Encabezado */
 /* titulo del encabezado */
@@ -635,3 +619,17 @@ footer {
   align-items: center;
   font-size: 2rem;
   color: #fff; }
+
+.btn-ttc,
+.btn-ttc:hover,
+.btn-ttc:active {
+  color: white !important;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #007da7; }
+
+.btn-ttc {
+  background-repeat: repeat-x;
+  background-image: linear-gradient(top, #43d200 0%, #007da7 100%); }
+
+.btn-ttc:hover {
+  background-position: 0 -15px; }
