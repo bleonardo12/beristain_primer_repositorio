@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "name": "Medias Locas Unicornio",
+    "description": "Medias con diseño de unicornios multicolor. Material suave y cómodo.",
+    "price": 2500,
+    "image": "https://via.placeholder.com/300x400/FF69B4/FFFFFF?text=Unicornio",
+    "category": "fantasia",
+    "sizes": ["S", "M", "L"],
+    "colors": ["Rosa", "Multicolor"],
+    "stock": 50
+  },
+  {
+    "id": 2,
+    "name": "Medias Rockeras",
+    "description": "Diseño con guitarras y notas musicales. Para los amantes del rock.",
+    "price": 2300,
+    "image": "https://via.placeholder.com/300x400/000000/FFFFFF?text=Rock",
+    "category": "musica",
+    "sizes": ["S", "M", "L"],
+    "colors": ["Negro", "Gris"],
+    "stock": 45
+  },
+  {
+    "id": 3,
+    "name": "Medias Geek Space",
+    "description": "Galaxias, planetas y astronautas. Para los fanáticos del espacio.",
+    "price": 2700,
+    "image": "https://via.placeholder.com/300x400/000033/FFFFFF?text=Space",
+    "category": "geek",
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": ["Azul Oscuro", "Negro"],
+    "stock": 60
+  },
+  {
+    "id": 4,
+    "name": "Medias Foodie Pizza",
+    "description": "Diseño de pizzas, hamburguesas y comida deliciosa.",
+    "price": 2400,
+    "image": "https://via.placeholder.com/300x400/FFD700/000000?text=Food",
+    "category": "comida",
+    "sizes": ["S", "M", "L"],
+    "colors": ["Amarillo", "Rojo"],
+    "stock": 55
+  },
+  {
+    "id": 5,
+    "name": "Medias Tropicales",
+    "description": "Flamencos, palmeras y piñas. Vibes de verano todo el año.",
+    "price": 2600,
+    "image": "https://via.placeholder.com/300x400/00CED1/FFFFFF?text=Tropical",
+    "category": "naturaleza",
+    "sizes": ["S", "M", "L"],
+    "colors": ["Turquesa", "Rosa", "Verde"],
+    "stock": 40
+  },
+  {
+    "id": 6,
+    "name": "Medias Gamer Pixel",
+    "description": "Diseños retro pixelados estilo 8-bit. Para gamers de corazón.",
+    "price": 2500,
+    "image": "https://via.placeholder.com/300x400/8B008B/00FF00?text=Pixel",
+    "category": "geek",
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": ["Morado", "Verde Neón"],
+    "stock": 70
+  },
+  {
+    "id": 7,
+    "name": "Medias Kawaii",
+    "description": "Diseños súper tiernos estilo japonés. Caras felices y colores pastel.",
+    "price": 2300,
+    "image": "https://via.placeholder.com/300x400/FFB6C1/FFFFFF?text=Kawaii",
+    "category": "fantasia",
+    "sizes": ["S", "M", "L"],
+    "colors": ["Rosa Pastel", "Celeste"],
+    "stock": 65
+  },
+  {
+    "id": 8,
+    "name": "Medias Deportivas Neón",
+    "description": "Colores fluorescentes para hacer deporte con estilo.",
+    "price": 2800,
+    "image": "https://via.placeholder.com/300x400/00FF00/000000?text=Sport",
+    "category": "deportivas",
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": ["Verde Neón", "Naranja", "Amarillo"],
+    "stock": 80
+  },
+  {
+    "id": 9,
+    "name": "Medias Animales Locos",
+    "description": "Perros, gatos, pandas y más animales adorables.",
+    "price": 2400,
+    "image": "https://via.placeholder.com/300x400/FFA500/FFFFFF?text=Animals",
+    "category": "animales",
+    "sizes": ["S", "M", "L"],
+    "colors": ["Naranja", "Marrón", "Blanco"],
+    "stock": 55
+  },
+  {
+    "id": 10,
+    "name": "Medias Abstractas Colores",
+    "description": "Diseños abstractos con explosión de colores vibrantes.",
+    "price": 2200,
+    "image": "https://via.placeholder.com/300x400/FF1493/FFFF00?text=Abstract",
+    "category": "arte",
+    "sizes": ["S", "M", "L"],
+    "colors": ["Multicolor"],
+    "stock": 50
+  }
+]

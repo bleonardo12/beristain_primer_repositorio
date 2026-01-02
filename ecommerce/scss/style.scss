@@ -1,0 +1,669 @@
+// Variables
+$primary-color: #FF1493;
+$secondary-color: #FF69B4;
+$accent-color: #FFD700;
+$dark-color: #2C3E50;
+$light-color: #F8F9FA;
+$success-color: #00D084;
+$warning-color: #FFA500;
+
+$font-primary: 'Poppins', sans-serif;
+$font-secondary: 'Fredoka', sans-serif;
+
+// Mixins
+@mixin transition($property: all, $duration: 0.3s) {
+  transition: $property $duration ease;
+}
+
+@mixin box-shadow($shadow) {
+  box-shadow: $shadow;
+}
+
+@mixin gradient-bg($color1, $color2) {
+  background: linear-gradient(135deg, $color1 0%, $color2 100%);
+}
+
+// Reset and Base
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-primary;
+  color: $dark-color;
+  overflow-x: hidden;
+}
+
+// Navbar
+.navbar {
+  @include gradient-bg($primary-color, $secondary-color);
+  padding: 1rem 0;
+  @include box-shadow(0 2px 10px rgba(0, 0, 0, 0.1));
+
+  .navbar-brand {
+    font-family: $font-secondary;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: white !important;
+    @include transition;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    i {
+      margin-right: 0.5rem;
+    }
+  }
+
+  .nav-link {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-weight: 500;
+    margin: 0 0.5rem;
+    @include transition;
+
+    &:hover, &.active {
+      color: $accent-color !important;
+      transform: translateY(-2px);
+    }
+  }
+
+  .btn-cart {
+    background: white;
+    color: $primary-color;
+    border: none;
+    border-radius: 50px;
+    padding: 0.5rem 1.2rem;
+    font-weight: 600;
+    position: relative;
+    @include transition;
+
+    &:hover {
+      transform: scale(1.1);
+      @include box-shadow(0 5px 15px rgba(0, 0, 0, 0.2));
+    }
+
+    .badge {
+      position: absolute;
+      top: -5px;
+      right: -5px;
+      background: $accent-color;
+      color: $dark-color;
+      border-radius: 50%;
+      padding: 0.3rem 0.5rem;
+      font-size: 0.75rem;
+    }
+  }
+}
+
+// Hero Section
+.hero {
+  min-height: 100vh;
+  @include gradient-bg(#FF1493, #9B59B6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding-top: 80px;
+
+  .hero-content {
+    text-align: center;
+    color: white;
+    z-index: 10;
+    padding: 2rem;
+
+    .hero-title {
+      font-family: $font-secondary;
+      font-size: 4rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+
+      @media (max-width: 768px) {
+        font-size: 2.5rem;
+      }
+    }
+
+    .hero-subtitle {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+      font-weight: 300;
+    }
+
+    .hero-badges {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+
+      .badge-hero {
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        padding: 0.7rem 1.5rem;
+        border-radius: 50px;
+        font-weight: 500;
+
+        i {
+          margin-right: 0.5rem;
+        }
+      }
+    }
+
+    .btn-hero {
+      background: $accent-color;
+      color: $dark-color;
+      padding: 1rem 3rem;
+      border-radius: 50px;
+      font-size: 1.2rem;
+      font-weight: 700;
+      text-decoration: none;
+      display: inline-block;
+      @include transition;
+      @include box-shadow(0 5px 20px rgba(0, 0, 0, 0.2));
+
+      &:hover {
+        transform: translateY(-5px);
+        @include box-shadow(0 10px 30px rgba(0, 0, 0, 0.3));
+      }
+    }
+  }
+
+  .hero-decoration {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    .floating-sock {
+      position: absolute;
+      font-size: 5rem;
+      animation: float 6s ease-in-out infinite;
+      opacity: 0.3;
+
+      &.sock-1 {
+        top: 20%;
+        left: 10%;
+        animation-delay: 0s;
+      }
+
+      &.sock-2 {
+        top: 60%;
+        right: 15%;
+        animation-delay: 2s;
+      }
+
+      &.sock-3 {
+        bottom: 20%;
+        left: 50%;
+        animation-delay: 4s;
+      }
+    }
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-30px) rotate(10deg);
+  }
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-pop {
+  animation: pop 0.6s ease-out;
+}
+
+// Shipping Banner
+.shipping-banner {
+  background: $success-color;
+  color: white;
+  padding: 1rem 0;
+  font-weight: 600;
+
+  i {
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+  }
+
+  .countdown {
+    font-size: 1.3rem;
+    font-weight: 700;
+    font-family: $font-secondary;
+  }
+}
+
+// Filters Section
+.filters-section {
+  padding: 4rem 0 2rem;
+
+  .section-title {
+    font-family: $font-secondary;
+    font-size: 3rem;
+    font-weight: 700;
+    color: $dark-color;
+
+    .highlight {
+      color: $primary-color;
+    }
+  }
+
+  .filters {
+    margin: 2rem 0;
+
+    .filter-select {
+      border: 2px solid $secondary-color;
+      border-radius: 50px;
+      padding: 0.7rem 1rem;
+      font-weight: 500;
+      @include transition;
+
+      &:focus {
+        border-color: $primary-color;
+        @include box-shadow(0 0 0 0.2rem rgba(255, 20, 147, 0.25));
+      }
+    }
+  }
+}
+
+// Products Section
+.products-section {
+  padding: 2rem 0 4rem;
+
+  .product-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    @include box-shadow(0 5px 15px rgba(0, 0, 0, 0.1));
+    @include transition;
+    margin-bottom: 2rem;
+    cursor: pointer;
+
+    &:hover {
+      transform: translateY(-10px);
+      @include box-shadow(0 10px 30px rgba(0, 0, 0, 0.2));
+
+      .product-image img {
+        transform: scale(1.1);
+      }
+    }
+
+    .product-image {
+      position: relative;
+      overflow: hidden;
+      height: 300px;
+      background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        @include transition(transform, 0.5s);
+      }
+
+      .product-badge {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: $accent-color;
+        color: $dark-color;
+        padding: 0.5rem 1rem;
+        border-radius: 50px;
+        font-weight: 700;
+        font-size: 0.9rem;
+      }
+    }
+
+    .product-info {
+      padding: 1.5rem;
+
+      .product-category {
+        color: $primary-color;
+        font-weight: 600;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        margin-bottom: 0.5rem;
+      }
+
+      .product-name {
+        font-size: 1.3rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        color: $dark-color;
+      }
+
+      .product-description {
+        color: #666;
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+      }
+
+      .product-price {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: $primary-color;
+        font-family: $font-secondary;
+        margin-bottom: 1rem;
+      }
+
+      .product-sizes {
+        display: flex;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+
+        .size-badge {
+          background: $light-color;
+          padding: 0.3rem 0.7rem;
+          border-radius: 10px;
+          font-size: 0.85rem;
+          font-weight: 600;
+        }
+      }
+
+      .btn-add-cart {
+        width: 100%;
+        @include gradient-bg($primary-color, $secondary-color);
+        color: white;
+        border: none;
+        padding: 0.8rem;
+        border-radius: 50px;
+        font-weight: 700;
+        @include transition;
+
+        &:hover {
+          transform: scale(1.05);
+          @include box-shadow(0 5px 15px rgba(255, 20, 147, 0.4));
+        }
+
+        i {
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+// About Section
+.about-section {
+  padding: 5rem 0;
+  background: $light-color;
+
+  .section-title {
+    font-family: $font-secondary;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+
+    .highlight {
+      color: $primary-color;
+    }
+  }
+
+  .about-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+  }
+
+  .about-list {
+    list-style: none;
+    padding: 0;
+
+    li {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+
+      i {
+        color: $success-color;
+        font-size: 1.5rem;
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  .about-image {
+    img {
+      width: 100%;
+      border-radius: 20px;
+      @include box-shadow(0 10px 30px rgba(0, 0, 0, 0.2));
+    }
+  }
+}
+
+// Contact Section
+.contact-section {
+  padding: 5rem 0;
+
+  .section-title {
+    font-family: $font-secondary;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+
+    .highlight {
+      color: $primary-color;
+    }
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      background: white;
+      padding: 2rem;
+      border-radius: 20px;
+      @include box-shadow(0 5px 15px rgba(0, 0, 0, 0.1));
+      @include transition;
+
+      &:hover {
+        transform: translateX(10px);
+      }
+
+      i {
+        font-size: 3rem;
+        color: $primary-color;
+      }
+
+      h4 {
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        margin: 0;
+        color: #666;
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+
+// Footer
+.footer {
+  background: $dark-color;
+  color: white;
+  padding: 3rem 0 1rem;
+
+  h4, h5 {
+    margin-bottom: 1rem;
+    font-family: $font-secondary;
+  }
+
+  .footer-links {
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin-bottom: 0.5rem;
+
+      a {
+        color: rgba(255, 255, 255, 0.7);
+        text-decoration: none;
+        @include transition;
+
+        &:hover {
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+
+  .social-links {
+    display: flex;
+    gap: 1rem;
+
+    a {
+      width: 40px;
+      height: 40px;
+      background: $primary-color;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.2rem;
+      @include transition;
+
+      &:hover {
+        background: $secondary-color;
+        transform: translateY(-5px);
+      }
+    }
+  }
+
+  hr {
+    border-color: rgba(255, 255, 255, 0.1);
+    margin: 2rem 0;
+  }
+}
+
+// Cart Modal
+.modal-content {
+  border-radius: 20px;
+  border: none;
+
+  .modal-header {
+    @include gradient-bg($primary-color, $secondary-color);
+    color: white;
+    border-radius: 20px 20px 0 0;
+
+    .btn-close {
+      filter: brightness(0) invert(1);
+    }
+  }
+
+  .cart-item {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid $light-color;
+    align-items: center;
+
+    img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .cart-item-info {
+      flex: 1;
+
+      h5 {
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+      }
+
+      .cart-item-details {
+        font-size: 0.9rem;
+        color: #666;
+      }
+    }
+
+    .cart-item-price {
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: $primary-color;
+    }
+
+    .cart-item-quantity {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+
+      button {
+        width: 30px;
+        height: 30px;
+        border: none;
+        background: $light-color;
+        border-radius: 50%;
+        font-weight: 700;
+        @include transition;
+
+        &:hover {
+          background: $secondary-color;
+          color: white;
+        }
+      }
+
+      span {
+        min-width: 30px;
+        text-align: center;
+        font-weight: 700;
+      }
+    }
+
+    .btn-remove {
+      color: #dc3545;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      @include transition;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+// Responsive
+@media (max-width: 768px) {
+  .hero .hero-content .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .section-title {
+    font-size: 2rem !important;
+  }
+
+  .contact-info .contact-item {
+    flex-direction: column;
+    text-align: center;
+  }
+}

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SockLoco - Medias locas, divertidas y coloridas para todos los estilos">
+    <meta name="keywords" content="medias, socks, coloridas, divertidas, online, argentina">
+    <title>SockLoco - Medias Locas y Divertidas</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Fredoka:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-socks"></i> SockLoco
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#productos">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-cart" id="cartBtn">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="badge" id="cartCount">0</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title animate-pop">¡Dale color a tus pies!</h1>
+            <p class="hero-subtitle">Medias locas, divertidas y súper cómodas</p>
+            <div class="hero-badges">
+                <span class="badge-hero"><i class="fas fa-truck"></i> Envío express antes de las 15hs</span>
+                <span class="badge-hero"><i class="fas fa-shield-alt"></i> Compra 100% segura</span>
+                <span class="badge-hero"><i class="fas fa-smile"></i> +200 diseños</span>
+            </div>
+            <a href="#productos" class="btn btn-hero">Ver productos</a>
+        </div>
+        <div class="hero-decoration">
+            <div class="floating-sock sock-1">🧦</div>
+            <div class="floating-sock sock-2">🧦</div>
+            <div class="floating-sock sock-3">🧦</div>
+        </div>
+    </section>
+
+    <!-- Express Shipping Banner -->
+    <div class="shipping-banner" id="shippingBanner">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <i class="fas fa-rocket"></i>
+                    <span class="shipping-text" id="shippingText">
+                        ¡Comprá antes de las 15hs y lo enviamos HOY!
+                    </span>
+                </div>
+                <div class="col-md-4 text-end">
+                    <span class="countdown" id="countdown"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Filters Section -->
+    <section class="filters-section" id="productos">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">
+                Nuestras Medias <span class="highlight">Locas</span>
+            </h2>
+
+            <!-- Filters -->
+            <div class="filters">
+                <div class="row">
+                    <div class="col-md-3">
+                        <select class="form-select filter-select" id="categoryFilter">
+                            <option value="">Todas las categorías</option>
+                            <option value="fantasia">Fantasía</option>
+                            <option value="geek">Geek</option>
+                            <option value="musica">Música</option>
+                            <option value="comida">Comida</option>
+                            <option value="naturaleza">Naturaleza</option>
+                            <option value="deportivas">Deportivas</option>
+                            <option value="animales">Animales</option>
+                            <option value="arte">Arte</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <select class="form-select filter-select" id="sizeFilter">
+                            <option value="">Todos los talles</option>
+                            <option value="S">S (35-37)</option>
+                            <option value="M">M (38-40)</option>
+                            <option value="L">L (41-43)</option>
+                            <option value="XL">XL (44-46)</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <select class="form-select filter-select" id="sortFilter">
+                            <option value="">Ordenar por</option>
+                            <option value="price-asc">Precio: menor a mayor</option>
+                            <option value="price-desc">Precio: mayor a menor</option>
+                            <option value="name">Nombre A-Z</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control filter-select" id="searchInput" placeholder="🔍 Buscar...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-section">
+        <div class="container">
+            <div class="row" id="productsGrid">
+                <!-- Products will be loaded here by JavaScript -->
+            </div>
+            <div id="noResults" class="text-center d-none">
+                <img src="https://via.placeholder.com/200/FF69B4/FFFFFF?text=:(" alt="No results">
+                <h3>No encontramos medias con esos filtros</h3>
+                <p>Probá con otros criterios de búsqueda</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="section-title">¿Por qué <span class="highlight">SockLoco</span>?</h2>
+                    <p class="about-text">
+                        Somos un emprendimiento argentino que nació con la idea de que las medias no tienen por qué ser aburridas.
+                        Creemos que cada par de medias cuenta una historia y refleja tu personalidad.
+                    </p>
+                    <ul class="about-list">
+                        <li><i class="fas fa-check-circle"></i> Más de 200 diseños únicos</li>
+                        <li><i class="fas fa-check-circle"></i> Materiales de alta calidad</li>
+                        <li><i class="fas fa-check-circle"></i> Envíos express a todo el país</li>
+                        <li><i class="fas fa-check-circle"></i> Pago seguro con MercadoPago</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <div class="about-image">
+                        <img src="https://via.placeholder.com/500x400/FF69B4/FFFFFF?text=SockLoco" alt="About Us">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contacto">
+        <div class="container">
+            <h2 class="section-title text-center">¿Tenés dudas? <span class="highlight">Contactanos</span></h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>hola@sockloco.com.ar</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-whatsapp"></i>
+                            <div>
+                                <h4>WhatsApp</h4>
+                                <p>+54 9 11 1234-5678</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-instagram"></i>
+                            <div>
+                                <h4>Instagram</h4>
+                                <p>@sockloco.ar</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4><i class="fas fa-socks"></i> SockLoco</h4>
+                    <p>Medias que hablan por vos</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Links útiles</h5>
+                    <ul class="footer-links">
+                        <li><a href="#productos">Productos</a></li>
+                        <li><a href="#about">Nosotros</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Seguinos</h5>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2026 SockLoco. Todos los derechos reservados. Argentina 🇦🇷</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Modal -->
+    <div class="modal fade" id="cartModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><i class="fas fa-shopping-cart"></i> Tu Carrito</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="cartItems">
+                        <!-- Cart items will be loaded here -->
+                    </div>
+                    <div id="emptyCart" class="text-center py-5 d-none">
+                        <i class="fas fa-shopping-cart fa-3x text-muted mb-3"></i>
+                        <p>Tu carrito está vacío</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="w-100">
+                        <div class="d-flex justify-content-between mb-3">
+                            <h4>Total:</h4>
+                            <h4 id="cartTotal">$0</h4>
+                        </div>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Seguir comprando</button>
+                        <button type="button" class="btn btn-primary" id="checkoutBtn">
+                            <i class="fas fa-credit-card"></i> Finalizar Compra
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Detail Modal -->
+    <div class="modal fade" id="productModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalTitle"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body" id="productModalBody">
+                    <!-- Product details will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- MercadoPago SDK -->
+    <script src="https://sdk.mercadopago.com/js/v2"></script>
+    <!-- Custom JS -->
+    <script src="js/config.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/checkout.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
