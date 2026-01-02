@@ -150,14 +150,17 @@ class ProductManager {
     // Obtener nombre de categoría en español
     getCategoryName(category) {
         const categories = {
-            'fantasia': 'Fantasía',
-            'geek': 'Geek',
-            'musica': 'Música',
-            'comida': 'Comida',
-            'naturaleza': 'Naturaleza',
-            'deportivas': 'Deportivas',
-            'animales': 'Animales',
-            'arte': 'Arte'
+            'futbol': '⚽ Equipos de Fútbol',
+            'seleccion': '🇦🇷 Selección Argentina',
+            'deportivas': '🏃 Deportivas',
+            'fantasia': '✨ Fantasía',
+            'geek': '🎮 Geek',
+            'musica': '🎵 Música',
+            'casual': '👔 Casuales',
+            'comida': '🍕 Comida',
+            'naturaleza': '🌴 Naturaleza',
+            'animales': '🐾 Animales',
+            'arte': '🎨 Arte'
         };
         return categories[category] || category;
     }

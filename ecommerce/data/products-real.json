@@ -1,0 +1,167 @@
+[
+  {
+    "id": 1,
+    "name": "Medias Adidas Clásicas Blancas",
+    "description": "Medias deportivas estilo Adidas con tres rayas negras. Material de alta calidad, cómodas y resistentes.",
+    "price": 3500,
+    "image": "img/products/adidas-blancas.jpg",
+    "category": "deportivas",
+    "sizes": ["S", "M", "L"],
+    "colors": ["Blanco/Negro"],
+    "stock": 25
+  },
+  {
+    "id": 2,
+    "name": "Medias Racing Club Oficiales",
+    "description": "Medias celestes de Racing Club con escudo oficial. Para verdaderos hinchas de la Academia.",
+    "price": 4500,
+    "image": "img/products/racing-celestes.jpg",
+    "category": "futbol",
+    "sizes": ["S", "M", "L"],
+    "colors": ["Celeste/Blanco"],
+    "stock": 30
+  },
+  {
+    "id": 3,
+    "name": "Medias Boca Juniors",
+    "description": "Medias azul y oro de Boca Juniors. Con escudo del club más grande de Argentina.",
+    "price": 4500,
+    "image": "img/products/boca.jpg",
+    "category": "futbol",
+    "sizes": ["S", "M", "L"],
+    "colors": ["Azul/Amarillo"],
+    "stock": 35
+  },
+  {
+    "id": 4,
+    "name": "Medias River Plate",
+    "description": "Medias blancas con franja roja de River Plate. Para millonarios de corazón.",
+    "price": 4500,
+    "image": "img/products/river.jpg",
+    "category": "futbol",
+    "sizes": ["S", "M", "L"],
+    "colors": ["Blanco/Rojo"],
+    "stock": 35
+  },
+  {
+    "id": 5,
+    "name": "Medias Independiente Rojas",
+    "description": "Medias rojas de Independiente. El Rey de Copas en tus pies.",
+    "price": 4500,
+    "image": "img/products/independiente.jpg",
+    "category": "futbol",
+    "sizes": ["S", "M", "L"],
+    "colors": ["Rojo/Blanco"],
+    "stock": 20
+  },
+  {
+    "id": 6,
+    "name": "Medias San Lorenzo",
+    "description": "Medias azul y roja de San Lorenzo. Para el Ciclón.",
+    "price": 4500,
+    "image": "img/products/sanlorenzo.jpg",
+    "category": "futbol",
+    "sizes": ["S", "M", "L"],
+    "colors": ["Azul/Rojo"],
+    "stock": 20
+  },
+  {
+    "id": 7,
+    "name": "Medias Nike Deportivas Negras",
+    "description": "Medias deportivas Nike negras con logo. Máxima comodidad para entrenar.",
+    "price": 3800,
+    "image": "img/products/nike-negras.jpg",
+    "category": "deportivas",
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": ["Negro/Blanco"],
+    "stock": 40
+  },
+  {
+    "id": 8,
+    "name": "Medias Puma Training",
+    "description": "Medias Puma para entrenamiento. Antitranspirantes y duraderas.",
+    "price": 3500,
+    "image": "img/products/puma.jpg",
+    "category": "deportivas",
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": ["Negro", "Blanco", "Gris"],
+    "stock": 45
+  },
+  {
+    "id": 9,
+    "name": "Medias Argentina AFA",
+    "description": "Medias oficiales de la Selección Argentina. Albiceleste de corazón.",
+    "price": 5000,
+    "image": "img/products/argentina.jpg",
+    "category": "seleccion",
+    "sizes": ["S", "M", "L"],
+    "colors": ["Blanco/Celeste"],
+    "stock": 50
+  },
+  {
+    "id": 10,
+    "name": "Medias Adidas Performance",
+    "description": "Medias de alto rendimiento Adidas. Para deportistas exigentes.",
+    "price": 4000,
+    "image": "img/products/adidas-performance.jpg",
+    "category": "deportivas",
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": ["Negro", "Blanco", "Gris"],
+    "stock": 35
+  },
+  {
+    "id": 11,
+    "name": "Medias Estudiantes de La Plata",
+    "description": "Medias rojas y blancas del Pincha. Para los hinchas de Estudiantes.",
+    "price": 4500,
+    "image": "img/products/estudiantes.jpg",
+    "category": "futbol",
+    "sizes": ["S", "M", "L"],
+    "colors": ["Rojo/Blanco"],
+    "stock": 15
+  },
+  {
+    "id": 12,
+    "name": "Medias Vélez Sarsfield",
+    "description": "Medias blancas con franja azul de Vélez. El Fortín en tus pies.",
+    "price": 4500,
+    "image": "img/products/velez.jpg",
+    "category": "futbol",
+    "sizes": ["S", "M", "L"],
+    "colors": ["Blanco/Azul"],
+    "stock": 15
+  },
+  {
+    "id": 13,
+    "name": "Pack x3 Medias Deportivas",
+    "description": "Pack de 3 pares de medias deportivas en colores variados. Económico y práctico.",
+    "price": 8500,
+    "image": "img/products/pack-3.jpg",
+    "category": "deportivas",
+    "sizes": ["S", "M", "L"],
+    "colors": ["Multicolor"],
+    "stock": 20
+  },
+  {
+    "id": 14,
+    "name": "Medias Retro Argentina 86",
+    "description": "Edición especial retro Argentina '86. Conmemorativa del Mundial.",
+    "price": 5500,
+    "image": "img/products/argentina-86.jpg",
+    "category": "seleccion",
+    "sizes": ["S", "M", "L"],
+    "colors": ["Celeste/Blanco"],
+    "stock": 10
+  },
+  {
+    "id": 15,
+    "name": "Medias Newell's Old Boys",
+    "description": "Medias rojas y negras de Newell's. Para la Lepra rosarina.",
+    "price": 4500,
+    "image": "img/products/newells.jpg",
+    "category": "futbol",
+    "sizes": ["S", "M", "L"],
+    "colors": ["Rojo/Negro"],
+    "stock": 15
+  }
+]
